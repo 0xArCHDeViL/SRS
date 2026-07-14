@@ -1,1 +1,1323 @@
-test
+[
+  {
+    "id": "b1_001",
+    "kanji": "私",
+    "kana": "わたし",
+    "arti": "saya",
+    "tags": [
+      "Bab 1",
+      "Pronomina"
+    ]
+  },
+  {
+    "id": "b1_002",
+    "kanji": "おれ (俺)",
+    "kana": "おれ",
+    "arti": "saya (kasar)",
+    "tags": [
+      "Bab 1",
+      "Pronomina"
+    ]
+  },
+  {
+    "id": "b1_003",
+    "kanji": "あなた (貴方)",
+    "kana": "あなた",
+    "arti": "kamu",
+    "tags": [
+      "Bab 1",
+      "Pronomina"
+    ]
+  },
+  {
+    "id": "b1_004",
+    "kanji": "君",
+    "kana": "きみ",
+    "arti": "kamu",
+    "tags": [
+      "Bab 1",
+      "Pronomina"
+    ]
+  },
+  {
+    "id": "b1_005",
+    "kanji": "お前",
+    "kana": "おまえ",
+    "arti": "kamu (kasar)",
+    "tags": [
+      "Bab 1",
+      "Pronomina"
+    ]
+  },
+  {
+    "id": "b1_006",
+    "kanji": "彼",
+    "kana": "かれ",
+    "arti": "dia (laki-laki)",
+    "tags": [
+      "Bab 1",
+      "Pronomina"
+    ]
+  },
+  {
+    "id": "b1_007",
+    "kanji": "彼女",
+    "kana": "かのじょ",
+    "arti": "dia (perempuan)",
+    "tags": [
+      "Bab 1",
+      "Pronomina"
+    ]
+  },
+  {
+    "id": "b1_008",
+    "kanji": "学生",
+    "kana": "がくせい",
+    "arti": "siswa",
+    "tags": [
+      "Bab 1",
+      "Profesi",
+      "Akademik"
+    ]
+  },
+  {
+    "id": "b1_009",
+    "kanji": "先生",
+    "kana": "せんせい",
+    "arti": "guru/dosen",
+    "tags": [
+      "Bab 1",
+      "Profesi",
+      "Akademik"
+    ]
+  },
+  {
+    "id": "b1_010",
+    "kanji": "生徒",
+    "kana": "せいと",
+    "arti": "murid",
+    "tags": [
+      "Bab 1",
+      "Profesi",
+      "Akademik"
+    ]
+  },
+  {
+    "id": "b1_011",
+    "kanji": "医者",
+    "kana": "いしゃ",
+    "arti": "dokter",
+    "tags": [
+      "Bab 1",
+      "Profesi"
+    ]
+  },
+  {
+    "id": "b1_012",
+    "kanji": "銀行員",
+    "kana": "ぎんこういん",
+    "arti": "pegawai bank",
+    "tags": [
+      "Bab 1",
+      "Profesi",
+      "Fasilitas Umum"
+    ]
+  },
+  {
+    "id": "b1_013",
+    "kanji": "駅員",
+    "kana": "えきいん",
+    "arti": "pegawai stasiun",
+    "tags": [
+      "Bab 1",
+      "Profesi",
+      "Fasilitas Umum"
+    ]
+  },
+  {
+    "id": "b1_014",
+    "kanji": "社員",
+    "kana": "しゃいん",
+    "arti": "karyawan",
+    "tags": [
+      "Bab 1",
+      "Profesi"
+    ]
+  },
+  {
+    "id": "b1_015",
+    "kanji": "かれら (彼ら)",
+    "kana": "かれら",
+    "arti": "mereka",
+    "tags": [
+      "Bab 1",
+      "Pronomina"
+    ]
+  },
+  {
+    "id": "b1_016",
+    "kanji": "あの人",
+    "kana": "あのひと",
+    "arti": "orang itu",
+    "tags": [
+      "Bab 1",
+      "Pronomina"
+    ]
+  },
+  {
+    "id": "b1_017",
+    "kanji": "あの方",
+    "kana": "あのかた",
+    "arti": "orang itu (lebih sopan)",
+    "tags": [
+      "Bab 1",
+      "Pronomina"
+    ]
+  },
+  {
+    "id": "b1_018",
+    "kanji": "私たち",
+    "kana": "わたしたち",
+    "arti": "kami",
+    "tags": [
+      "Bab 1",
+      "Pronomina"
+    ]
+  },
+  {
+    "id": "b1_019",
+    "kanji": "〜さん",
+    "kana": "〜さん",
+    "arti": "Mr./Mrs.~ (orang lain)",
+    "tags": [
+      "Bab 1",
+      "Sufiks Panggilan"
+    ]
+  },
+  {
+    "id": "b1_020",
+    "kanji": "〜ちゃん",
+    "kana": "〜ちゃん",
+    "arti": "(untuk anak kecil)",
+    "tags": [
+      "Bab 1",
+      "Sufiks Panggilan"
+    ]
+  },
+  {
+    "id": "b1_021",
+    "kanji": "〜くん (〜君)",
+    "kana": "〜くん",
+    "arti": "(untuk laki-laki)",
+    "tags": [
+      "Bab 1",
+      "Sufiks Panggilan"
+    ]
+  },
+  {
+    "id": "b1_022",
+    "kanji": "みなさん (皆さん)",
+    "kana": "みなさん",
+    "arti": "Kalian semua",
+    "tags": [
+      "Bab 1",
+      "Pronomina"
+    ]
+  },
+  {
+    "id": "b1_023",
+    "kanji": "母",
+    "kana": "はは",
+    "arti": "Ibu (saya)",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_024",
+    "kanji": "父",
+    "kana": "ちち",
+    "arti": "Ayah (saya)",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_025",
+    "kanji": "妹",
+    "kana": "いもうと",
+    "arti": "Adik perempuan (saya)",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_026",
+    "kanji": "弟",
+    "kana": "おとうと",
+    "arti": "Adik laki-laki (saya)",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_027",
+    "kanji": "姉",
+    "kana": "あね",
+    "arti": "Kakak perempuan (saya)",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_028",
+    "kanji": "兄",
+    "kana": "あに",
+    "arti": "Kakak laki-laki (saya)",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_029",
+    "kanji": "こうむいん (公務員)",
+    "kana": "こうむいん",
+    "arti": "pegawai negeri",
+    "tags": [
+      "Bab 1",
+      "Profesi"
+    ]
+  },
+  {
+    "id": "b1_030",
+    "kanji": "じむいん (事務員)",
+    "kana": "じむいん",
+    "arti": "staff",
+    "tags": [
+      "Bab 1",
+      "Profesi"
+    ]
+  },
+  {
+    "id": "b1_031",
+    "kanji": "会社員",
+    "kana": "かいしゃいん",
+    "arti": "pegawai perusahaan",
+    "tags": [
+      "Bab 1",
+      "Profesi"
+    ]
+  },
+  {
+    "id": "b1_032",
+    "kanji": "主婦",
+    "kana": "しゅふ",
+    "arti": "ibu rumah tangga",
+    "tags": [
+      "Bab 1",
+      "Profesi",
+      "Kazoku"
+    ]
+  },
+  {
+    "id": "b1_033",
+    "kanji": "主夫",
+    "kana": "しゅふ",
+    "arti": "bapak rumah tangga",
+    "tags": [
+      "Bab 1",
+      "Profesi",
+      "Kazoku"
+    ]
+  },
+  {
+    "id": "b1_034",
+    "kanji": "農家",
+    "kana": "のうか",
+    "arti": "petani",
+    "tags": [
+      "Bab 1",
+      "Profesi"
+    ]
+  },
+  {
+    "id": "b1_035",
+    "kanji": "商人",
+    "kana": "しょうにん",
+    "arti": "pedagang",
+    "tags": [
+      "Bab 1",
+      "Profesi"
+    ]
+  },
+  {
+    "id": "b1_036",
+    "kanji": "かんごし (看護師)",
+    "kana": "かんごし",
+    "arti": "perawat",
+    "tags": [
+      "Bab 1",
+      "Profesi"
+    ]
+  },
+  {
+    "id": "b1_037",
+    "kanji": "けいさつ (警察)",
+    "kana": "けいさつ",
+    "arti": "polisi",
+    "tags": [
+      "Bab 1",
+      "Profesi"
+    ]
+  },
+  {
+    "id": "b1_038",
+    "kanji": "ちがいます (違います)",
+    "kana": "ちがいます",
+    "arti": "salah/berbeda",
+    "tags": [
+      "Bab 1",
+      "Ekspresi",
+      "Dasar"
+    ]
+  },
+  {
+    "id": "b1_039",
+    "kanji": "そうです",
+    "kana": "そうです",
+    "arti": "(membenarkan)",
+    "tags": [
+      "Bab 1",
+      "Ekspresi",
+      "Dasar"
+    ]
+  },
+  {
+    "id": "b1_040",
+    "kanji": "はい",
+    "kana": "はい",
+    "arti": "iya",
+    "tags": [
+      "Bab 1",
+      "Ekspresi",
+      "Dasar"
+    ]
+  },
+  {
+    "id": "b1_041",
+    "kanji": "いいえ",
+    "kana": "いいえ",
+    "arti": "tidak",
+    "tags": [
+      "Bab 1",
+      "Ekspresi",
+      "Dasar"
+    ]
+  },
+  {
+    "id": "b1_042",
+    "kanji": "日本",
+    "kana": "にほん",
+    "arti": "Jepang",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_043",
+    "kanji": "中国",
+    "kana": "ちゅうごく",
+    "arti": "China",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_044",
+    "kanji": "韓国",
+    "kana": "かんこく",
+    "arti": "Korea Selatan",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_045",
+    "kanji": "インド",
+    "kana": "インド",
+    "arti": "India",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_046",
+    "kanji": "インドネシア",
+    "kana": "インドネシア",
+    "arti": "Indonesia",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_047",
+    "kanji": "タイ",
+    "kana": "タイ",
+    "arti": "Thailand",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_048",
+    "kanji": "台湾",
+    "kana": "たいわん",
+    "arti": "Taiwan",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_049",
+    "kanji": "ネパール",
+    "kana": "ネパール",
+    "arti": "Nepal",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_050",
+    "kanji": "メキシコ",
+    "kana": "メキシコ",
+    "arti": "Meksiko",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_051",
+    "kanji": "ブラジル",
+    "kana": "ブラジル",
+    "arti": "Brazil",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_052",
+    "kanji": "ロシア",
+    "kana": "ロシア",
+    "arti": "Rusia",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_053",
+    "kanji": "イタリア",
+    "kana": "イタリア",
+    "arti": "Italia",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_054",
+    "kanji": "スペイン",
+    "kana": "スペイン",
+    "arti": "Spanyol",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_055",
+    "kanji": "ドイツ",
+    "kana": "ドイツ",
+    "arti": "Jerman",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_056",
+    "kanji": "フィリピン",
+    "kana": "フィリピン",
+    "arti": "Filipina",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_057",
+    "kanji": "ベトナム",
+    "kana": "ベトナム",
+    "arti": "Vietnam",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_058",
+    "kanji": "スイス",
+    "kana": "スイス",
+    "arti": "Swiss",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_059",
+    "kanji": "マレーシア",
+    "kana": "マレーシア",
+    "arti": "Malaysia",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_060",
+    "kanji": "ミャンマー",
+    "kana": "ミャンマー",
+    "arti": "Myanmar",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_061",
+    "kanji": "トルコ",
+    "kana": "トルコ",
+    "arti": "Turki",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_062",
+    "kanji": "オーストラリア",
+    "kana": "オーストラリア",
+    "arti": "Australia",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_063",
+    "kanji": "ニュージーランド",
+    "kana": "ニュージーランド",
+    "arti": "New Zealand",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_064",
+    "kanji": "アメリカ",
+    "kana": "アメリカ",
+    "arti": "Amerika",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_065",
+    "kanji": "カナダ",
+    "kana": "カナダ",
+    "arti": "Kanada",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_066",
+    "kanji": "イギリス",
+    "kana": "イギリス",
+    "arti": "Inggris",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_067",
+    "kanji": "フランス",
+    "kana": "フランス",
+    "arti": "Prancis",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_068",
+    "kanji": "エジプト",
+    "kana": "エジプト",
+    "arti": "Mesir",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_069",
+    "kanji": "ケニア",
+    "kana": "ケニア",
+    "arti": "Kenya",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_070",
+    "kanji": "シンガポール",
+    "kana": "シンガポール",
+    "arti": "Singapura",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_071",
+    "kanji": "サウジアラビア",
+    "kana": "サウジアラビア",
+    "arti": "Saudi Arabia",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_072",
+    "kanji": "どこ (何処)",
+    "kana": "どこ",
+    "arti": "dimana",
+    "tags": [
+      "Bab 1",
+      "Kata Tanya",
+      "Geografi"
+    ]
+  },
+  {
+    "id": "b1_073",
+    "kanji": "から",
+    "kana": "から",
+    "arti": "dari",
+    "tags": [
+      "Bab 1",
+      "Partikel"
+    ]
+  },
+  {
+    "id": "b1_074",
+    "kanji": "きました (来ました)",
+    "kana": "きました",
+    "arti": "datang",
+    "tags": [
+      "Bab 1",
+      "Kata Kerja"
+    ]
+  },
+  {
+    "id": "b1_075",
+    "kanji": "アメリカ (アメリア)",
+    "kana": "アメリカ",
+    "arti": "Amerika (Ditulis 'アメリア' di modul)",
+    "tags": [
+      "Bab 1",
+      "Negara"
+    ]
+  },
+  {
+    "id": "b1_076",
+    "kanji": "アジア",
+    "kana": "アジア",
+    "arti": "Asia",
+    "tags": [
+      "Bab 1",
+      "Geografi"
+    ]
+  },
+  {
+    "id": "b1_077",
+    "kanji": "アフリカ",
+    "kana": "アフリカ",
+    "arti": "Afrika",
+    "tags": [
+      "Bab 1",
+      "Geografi"
+    ]
+  },
+  {
+    "id": "b1_078",
+    "kanji": "ヨーロッパ",
+    "kana": "ヨーロッパ",
+    "arti": "Eropa (Ditulis 'ヨロッパ' di modul)",
+    "tags": [
+      "Bab 1",
+      "Geografi"
+    ]
+  },
+  {
+    "id": "b1_079",
+    "kanji": "アパート",
+    "kana": "アパート",
+    "arti": "apartemen",
+    "tags": [
+      "Bab 1",
+      "Akomodasi",
+      "Bangunan"
+    ]
+  },
+  {
+    "id": "b1_080",
+    "kanji": "寮",
+    "kana": "りょう",
+    "arti": "asrama",
+    "tags": [
+      "Bab 1",
+      "Akomodasi",
+      "Bangunan"
+    ]
+  },
+  {
+    "id": "b1_081",
+    "kanji": "ホテル",
+    "kana": "ホテル",
+    "arti": "hotel",
+    "tags": [
+      "Bab 1",
+      "Akomodasi",
+      "Bangunan"
+    ]
+  },
+  {
+    "id": "b1_082",
+    "kanji": "旅館",
+    "kana": "りょかん",
+    "arti": "penginapan",
+    "tags": [
+      "Bab 1",
+      "Akomodasi",
+      "Bangunan"
+    ]
+  },
+  {
+    "id": "b1_083",
+    "kanji": "マンション",
+    "kana": "マンション",
+    "arti": "mansion",
+    "tags": [
+      "Bab 1",
+      "Akomodasi",
+      "Bangunan"
+    ]
+  },
+  {
+    "id": "b1_084",
+    "kanji": "民宿",
+    "kana": "みんしゅく",
+    "arti": "guest house",
+    "tags": [
+      "Bab 1",
+      "Akomodasi",
+      "Bangunan"
+    ]
+  },
+  {
+    "id": "b1_085",
+    "kanji": "ゲストハウス",
+    "kana": "ゲストハウス",
+    "arti": "guest house",
+    "tags": [
+      "Bab 1",
+      "Akomodasi",
+      "Bangunan"
+    ]
+  },
+  {
+    "id": "b1_086",
+    "kanji": "町",
+    "kana": "まち",
+    "arti": "kota",
+    "tags": [
+      "Bab 1",
+      "Geografi"
+    ]
+  },
+  {
+    "id": "b1_087",
+    "kanji": "田舎",
+    "kana": "いなか",
+    "arti": "desa",
+    "tags": [
+      "Bab 1",
+      "Geografi"
+    ]
+  },
+  {
+    "id": "b1_088",
+    "kanji": "故郷",
+    "kana": "ふるさと",
+    "arti": "kampung halaman",
+    "tags": [
+      "Bab 1",
+      "Geografi"
+    ]
+  },
+  {
+    "id": "b1_089",
+    "kanji": "すんでいます (住んでいます)",
+    "kana": "すんでいます",
+    "arti": "tinggal/bermukim",
+    "tags": [
+      "Bab 1",
+      "Kata Kerja"
+    ]
+  },
+  {
+    "id": "b1_090",
+    "kanji": "両親",
+    "kana": "りょうしん",
+    "arti": "orang tua",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_091",
+    "kanji": "おかあさん (お母さん)",
+    "kana": "おかあさん",
+    "arti": "ibu (orang lain)",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Outer"
+    ]
+  },
+  {
+    "id": "b1_092",
+    "kanji": "おとうさん (お父さん)",
+    "kana": "おとうさん",
+    "arti": "ayah (orang lain)",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Outer"
+    ]
+  },
+  {
+    "id": "b1_093",
+    "kanji": "子供",
+    "kana": "こども",
+    "arti": "anak (saya)",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_094",
+    "kanji": "お子さん",
+    "kana": "おこさん",
+    "arti": "anak (orang lain)",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Outer"
+    ]
+  },
+  {
+    "id": "b1_095",
+    "kanji": "ともだち (友達)",
+    "kana": "ともだち",
+    "arti": "teman",
+    "tags": [
+      "Bab 1",
+      "Relasi Sosial"
+    ]
+  },
+  {
+    "id": "b1_096",
+    "kanji": "兄弟",
+    "kana": "きょうだい",
+    "arti": "saudara",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_097",
+    "kanji": "姉妹",
+    "kana": "しまい",
+    "arti": "saudara perempuan",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_098",
+    "kanji": "妻",
+    "kana": "つま",
+    "arti": "istri",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_099",
+    "kanji": "夫",
+    "kana": "おっと",
+    "arti": "suami",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_100",
+    "kanji": "奥さん",
+    "kana": "おくさん",
+    "arti": "istri (orang lain)",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Outer"
+    ]
+  },
+  {
+    "id": "b1_101",
+    "kanji": "ご主人",
+    "kana": "ごしゅじん",
+    "arti": "suami (orang lain)",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Outer"
+    ]
+  },
+  {
+    "id": "b1_102",
+    "kanji": "おじさん (伯父さん/叔父さん)",
+    "kana": "おじさん",
+    "arti": "paman",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_103",
+    "kanji": "おばさん (伯母さん/叔母さん)",
+    "kana": "おばさん",
+    "arti": "bibi",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_104",
+    "kanji": "継母",
+    "kana": "ままはは",
+    "arti": "ibu tiri",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_105",
+    "kanji": "継父",
+    "kana": "ままちち",
+    "arti": "ayah tiri",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_106",
+    "kanji": "祖父",
+    "kana": "そふ",
+    "arti": "kakek",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_107",
+    "kanji": "祖母",
+    "kana": "そぼ",
+    "arti": "nenek",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_108",
+    "kanji": "おばあさん (お祖母さん)",
+    "kana": "おばあさん",
+    "arti": "nenek (orang lain)",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Outer"
+    ]
+  },
+  {
+    "id": "b1_109",
+    "kanji": "おじいさん (お祖父さん)",
+    "kana": "おじいさん",
+    "arti": "kakek (orang lain)",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Outer"
+    ]
+  },
+  {
+    "id": "b1_110",
+    "kanji": "孫",
+    "kana": "まご",
+    "arti": "cucu",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_111",
+    "kanji": "いとこ (従兄弟/従姉妹)",
+    "kana": "いとこ",
+    "arti": "sepupu",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_112",
+    "kanji": "甥",
+    "kana": "おい",
+    "arti": "keponakan laki-laki",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_113",
+    "kanji": "姪",
+    "kana": "めい",
+    "arti": "keponakan perempuan",
+    "tags": [
+      "Bab 1",
+      "Kazoku-Inner"
+    ]
+  },
+  {
+    "id": "b1_114",
+    "kanji": "こいびと (恋人)",
+    "kana": "こいびと",
+    "arti": "pacar",
+    "tags": [
+      "Bab 1",
+      "Relasi Sosial"
+    ]
+  },
+  {
+    "id": "b1_115",
+    "kanji": "だれ・どなた (誰・何方)",
+    "kana": "だれ・どなた",
+    "arti": "siapa",
+    "tags": [
+      "Bab 1",
+      "Kata Tanya"
+    ]
+  },
+  {
+    "id": "b1_116",
+    "kanji": "ひとりで (一人で)",
+    "kana": "ひとりで",
+    "arti": "sendirian",
+    "tags": [
+      "Bab 1",
+      "Kata Keterangan"
+    ]
+  },
+  {
+    "id": "b1_117",
+    "kanji": "1歳",
+    "kana": "いっさい",
+    "arti": "1 tahun",
+    "tags": [
+      "Bab 1",
+      "Numerik",
+      "Umur"
+    ]
+  },
+  {
+    "id": "b1_118",
+    "kanji": "2歳",
+    "kana": "にさい",
+    "arti": "2 tahun",
+    "tags": [
+      "Bab 1",
+      "Numerik",
+      "Umur"
+    ]
+  },
+  {
+    "id": "b1_119",
+    "kanji": "3歳",
+    "kana": "さんさい",
+    "arti": "3 tahun",
+    "tags": [
+      "Bab 1",
+      "Numerik",
+      "Umur"
+    ]
+  },
+  {
+    "id": "b1_120",
+    "kanji": "4歳",
+    "kana": "よんさい",
+    "arti": "4 tahun",
+    "tags": [
+      "Bab 1",
+      "Numerik",
+      "Umur"
+    ]
+  },
+  {
+    "id": "b1_121",
+    "kanji": "5歳",
+    "kana": "ごさい",
+    "arti": "5 tahun",
+    "tags": [
+      "Bab 1",
+      "Numerik",
+      "Umur"
+    ]
+  },
+  {
+    "id": "b1_122",
+    "kanji": "6歳",
+    "kana": "ろくさい",
+    "arti": "6 tahun",
+    "tags": [
+      "Bab 1",
+      "Numerik",
+      "Umur"
+    ]
+  },
+  {
+    "id": "b1_123",
+    "kanji": "7歳",
+    "kana": "ななさい",
+    "arti": "7 tahun",
+    "tags": [
+      "Bab 1",
+      "Numerik",
+      "Umur"
+    ]
+  },
+  {
+    "id": "b1_124",
+    "kanji": "8歳",
+    "kana": "はっさい",
+    "arti": "8 tahun",
+    "tags": [
+      "Bab 1",
+      "Numerik",
+      "Umur"
+    ]
+  },
+  {
+    "id": "b1_125",
+    "kanji": "9歳",
+    "kana": "きゅうさい",
+    "arti": "9 tahun",
+    "tags": [
+      "Bab 1",
+      "Numerik",
+      "Umur"
+    ]
+  },
+  {
+    "id": "b1_126",
+    "kanji": "10歳",
+    "kana": "じゅっさい／じっさい",
+    "arti": "10 tahun",
+    "tags": [
+      "Bab 1",
+      "Numerik",
+      "Umur"
+    ]
+  },
+  {
+    "id": "b1_127",
+    "kanji": "20歳 (二十歳)",
+    "kana": "はたち",
+    "arti": "20 tahun",
+    "tags": [
+      "Bab 1",
+      "Numerik",
+      "Umur"
+    ]
+  },
+  {
+    "id": "b1_128",
+    "kanji": "何歳？ (おいくつ)",
+    "kana": "なんさい／おいくつ",
+    "arti": "berapa tahun?",
+    "tags": [
+      "Bab 1",
+      "Kata Tanya",
+      "Umur"
+    ]
+  },
+  {
+    "id": "b1_129",
+    "kanji": "あのう",
+    "kana": "あのう",
+    "arti": "Hm...",
+    "tags": [
+      "Bab 1",
+      "Ekspresi"
+    ]
+  }
+]

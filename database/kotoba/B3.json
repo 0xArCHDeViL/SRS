@@ -1,0 +1,907 @@
+[
+  {
+    "id": "b3_001",
+    "kanji": "魚",
+    "kana": "さかな",
+    "arti": "ikan",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Hewan Air"
+    ]
+  },
+  {
+    "id": "b3_002",
+    "kanji": "肉",
+    "kana": "にく",
+    "arti": "daging",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Daging"
+    ]
+  },
+  {
+    "id": "b3_003",
+    "kanji": "〜肉",
+    "kana": "〜にく",
+    "arti": "daging~",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Sufiks"
+    ]
+  },
+  {
+    "id": "b3_004",
+    "kanji": "豚肉",
+    "kana": "ぶたにく",
+    "arti": "daging babi",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Daging"
+    ]
+  },
+  {
+    "id": "b3_005",
+    "kanji": "鶏肉",
+    "kana": "とりにく",
+    "arti": "daging ayam",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Daging"
+    ]
+  },
+  {
+    "id": "b3_006",
+    "kanji": "牛肉",
+    "kana": "ぎゅうにく",
+    "arti": "daging sapi",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Daging"
+    ]
+  },
+  {
+    "id": "b3_007",
+    "kanji": "野菜",
+    "kana": "やさい",
+    "arti": "sayuran",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Sayuran"
+    ]
+  },
+  {
+    "id": "b3_008",
+    "kanji": "キャベツ",
+    "kana": "キャベツ",
+    "arti": "kubis",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Sayuran"
+    ]
+  },
+  {
+    "id": "b3_009",
+    "kanji": "にんじん (人参)",
+    "kana": "にんじん",
+    "arti": "wortel",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Sayuran"
+    ]
+  },
+  {
+    "id": "b3_010",
+    "kanji": "だいこん (大根)",
+    "kana": "だいこん",
+    "arti": "lobak",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Sayuran"
+    ]
+  },
+  {
+    "id": "b3_011",
+    "kanji": "はくさい (白菜)",
+    "kana": "はくさい",
+    "arti": "sawi",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Sayuran"
+    ]
+  },
+  {
+    "id": "b3_012",
+    "kanji": "じゃがいも (じゃが芋)",
+    "kana": "じゃがいも",
+    "arti": "kentang",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Sayuran"
+    ]
+  },
+  {
+    "id": "b3_013",
+    "kanji": "トマト",
+    "kana": "トマト",
+    "arti": "tomat",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Sayuran"
+    ]
+  },
+  {
+    "id": "b3_014",
+    "kanji": "きゅうり (胡瓜)",
+    "kana": "きゅうり",
+    "arti": "timun",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Sayuran"
+    ]
+  },
+  {
+    "id": "b3_015",
+    "kanji": "ピーマン",
+    "kana": "ピーマン",
+    "arti": "paprika",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Sayuran"
+    ]
+  },
+  {
+    "id": "b3_016",
+    "kanji": "とうがらし (唐辛子)",
+    "kana": "とうがらし",
+    "arti": "cabai",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Bumbu"
+    ]
+  },
+  {
+    "id": "b3_017",
+    "kanji": "ねぎ (葱)",
+    "kana": "ねぎ",
+    "arti": "daun bawang",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Bumbu"
+    ]
+  },
+  {
+    "id": "b3_018",
+    "kanji": "たまねぎ (玉葱)",
+    "kana": "たまねぎ",
+    "arti": "bawang bombai",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Bumbu"
+    ]
+  },
+  {
+    "id": "b3_019",
+    "kanji": "にんにく (大蒜)",
+    "kana": "にんにく",
+    "arti": "bawang putih",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Bumbu"
+    ]
+  },
+  {
+    "id": "b3_020",
+    "kanji": "あかたまねぎ (赤玉葱)",
+    "kana": "あかたまねぎ",
+    "arti": "bawang merah",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Bumbu"
+    ]
+  },
+  {
+    "id": "b3_021",
+    "kanji": "しょうが (生姜)",
+    "kana": "しょうが",
+    "arti": "jahe",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Bumbu"
+    ]
+  },
+  {
+    "id": "b3_022",
+    "kanji": "わさび (山葵)",
+    "kana": "わさび",
+    "arti": "wasabi",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Bumbu"
+    ]
+  },
+  {
+    "id": "b3_023",
+    "kanji": "食べ物",
+    "kana": "たべもの",
+    "arti": "makanan",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Kategori"
+    ]
+  },
+  {
+    "id": "b3_024",
+    "kanji": "納豆",
+    "kana": "なっとう",
+    "arti": "natto",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Hidangan Tradisional"
+    ]
+  },
+  {
+    "id": "b3_025",
+    "kanji": "うめぼし (梅干し)",
+    "kana": "うめぼし",
+    "arti": "umeboshi",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Hidangan Tradisional"
+    ]
+  },
+  {
+    "id": "b3_026",
+    "kanji": "ラーメン",
+    "kana": "ラーメン",
+    "arti": "mie ramen",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Hidangan"
+    ]
+  },
+  {
+    "id": "b3_027",
+    "kanji": "そば (蕎麦)",
+    "kana": "そば",
+    "arti": "mie soba",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Hidangan"
+    ]
+  },
+  {
+    "id": "b3_028",
+    "kanji": "うどん (饂飩)",
+    "kana": "うどん",
+    "arti": "mie udon",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Hidangan"
+    ]
+  },
+  {
+    "id": "b3_029",
+    "kanji": "やきとり (焼き鳥)",
+    "kana": "やきとり",
+    "arti": "sate ayam",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Hidangan"
+    ]
+  },
+  {
+    "id": "b3_030",
+    "kanji": "寿司",
+    "kana": "すし",
+    "arti": "sushi",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Hidangan Tradisional"
+    ]
+  },
+  {
+    "id": "b3_031",
+    "kanji": "カレーライス",
+    "kana": "カレーライス",
+    "arti": "nasi kare",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Hidangan"
+    ]
+  },
+  {
+    "id": "b3_032",
+    "kanji": "天ぷら",
+    "kana": "てんぷら",
+    "arti": "tempura",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Hidangan"
+    ]
+  },
+  {
+    "id": "b3_033",
+    "kanji": "ごはん (ご飯)",
+    "kana": "ごはん",
+    "arti": "nasi",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Pokok"
+    ]
+  },
+  {
+    "id": "b3_034",
+    "kanji": "ケーキ",
+    "kana": "ケーキ",
+    "arti": "kue",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Camilan"
+    ]
+  },
+  {
+    "id": "b3_035",
+    "kanji": "アイスクリーム",
+    "kana": "アイスクリーム",
+    "arti": "es krim",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Camilan"
+    ]
+  },
+  {
+    "id": "b3_036",
+    "kanji": "ヨーグルト",
+    "kana": "ヨーグルト",
+    "arti": "yogurt",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Camilan"
+    ]
+  },
+  {
+    "id": "b3_037",
+    "kanji": "飲み物",
+    "kana": "のみもの",
+    "arti": "minuman",
+    "tags": [
+      "Bab 3",
+      "Minuman",
+      "Kategori"
+    ]
+  },
+  {
+    "id": "b3_038",
+    "kanji": "お茶",
+    "kana": "おちゃ",
+    "arti": "teh / teh hijau",
+    "tags": [
+      "Bab 3",
+      "Minuman"
+    ]
+  },
+  {
+    "id": "b3_039",
+    "kanji": "紅茶",
+    "kana": "こうちゃ",
+    "arti": "teh hitam",
+    "tags": [
+      "Bab 3",
+      "Minuman"
+    ]
+  },
+  {
+    "id": "b3_040",
+    "kanji": "りょくちゃ (緑茶)",
+    "kana": "りょくちゃ",
+    "arti": "teh hijau jepang",
+    "tags": [
+      "Bab 3",
+      "Minuman"
+    ]
+  },
+  {
+    "id": "b3_041",
+    "kanji": "ウーロンちゃ (烏龍茶)",
+    "kana": "ウーロンちゃ",
+    "arti": "teh ulong",
+    "tags": [
+      "Bab 3",
+      "Minuman"
+    ]
+  },
+  {
+    "id": "b3_042",
+    "kanji": "お酒",
+    "kana": "おさけ",
+    "arti": "alkohol / sake",
+    "tags": [
+      "Bab 3",
+      "Minuman",
+      "Alkohol"
+    ]
+  },
+  {
+    "id": "b3_043",
+    "kanji": "ワイン",
+    "kana": "ワイン",
+    "arti": "minuman anggur",
+    "tags": [
+      "Bab 3",
+      "Minuman",
+      "Alkohol"
+    ]
+  },
+  {
+    "id": "b3_044",
+    "kanji": "ジュース",
+    "kana": "ジュース",
+    "arti": "jus",
+    "tags": [
+      "Bab 3",
+      "Minuman"
+    ]
+  },
+  {
+    "id": "b3_045",
+    "kanji": "ビール",
+    "kana": "ビール",
+    "arti": "bir",
+    "tags": [
+      "Bab 3",
+      "Minuman",
+      "Alkohol"
+    ]
+  },
+  {
+    "id": "b3_046",
+    "kanji": "コーヒー",
+    "kana": "コーヒー",
+    "arti": "kopi",
+    "tags": [
+      "Bab 3",
+      "Minuman"
+    ]
+  },
+  {
+    "id": "b3_047",
+    "kanji": "ソフトドリンク",
+    "kana": "ソフトドリンク",
+    "arti": "minuman ringan",
+    "tags": [
+      "Bab 3",
+      "Minuman"
+    ]
+  },
+  {
+    "id": "b3_048",
+    "kanji": "コカコーラ",
+    "kana": "コカコーラ",
+    "arti": "cocacola",
+    "tags": [
+      "Bab 3",
+      "Minuman",
+      "Merek"
+    ]
+  },
+  {
+    "id": "b3_049",
+    "kanji": "みず (水)",
+    "kana": "みず",
+    "arti": "air putih",
+    "tags": [
+      "Bab 3",
+      "Minuman",
+      "Pokok"
+    ]
+  },
+  {
+    "id": "b3_050",
+    "kanji": "みそしる (味噌汁)",
+    "kana": "みそしる",
+    "arti": "sup miso",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Sup"
+    ]
+  },
+  {
+    "id": "b3_051",
+    "kanji": "スープ",
+    "kana": "スープ",
+    "arti": "sup",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Sup"
+    ]
+  },
+  {
+    "id": "b3_052",
+    "kanji": "好き",
+    "kana": "すき",
+    "arti": "suka",
+    "tags": [
+      "Bab 3",
+      "Kata Sifat",
+      "Preferensi"
+    ]
+  },
+  {
+    "id": "b3_053",
+    "kanji": "大好き",
+    "kana": "だいすき",
+    "arti": "sangat suka",
+    "tags": [
+      "Bab 3",
+      "Kata Sifat",
+      "Preferensi"
+    ]
+  },
+  {
+    "id": "b3_054",
+    "kanji": "ちょっと…",
+    "kana": "ちょっと…",
+    "arti": "(tidak suka)",
+    "tags": [
+      "Bab 3",
+      "Ekspresi",
+      "Penolakan"
+    ]
+  },
+  {
+    "id": "b3_055",
+    "kanji": "食べます",
+    "kana": "たべます",
+    "arti": "makan",
+    "tags": [
+      "Bab 3",
+      "Kata Kerja",
+      "Aktivitas"
+    ]
+  },
+  {
+    "id": "b3_056",
+    "kanji": "飲みます",
+    "kana": "のみます",
+    "arti": "minum",
+    "tags": [
+      "Bab 3",
+      "Kata Kerja",
+      "Aktivitas"
+    ]
+  },
+  {
+    "id": "b3_057",
+    "kanji": "すみません",
+    "kana": "すみません",
+    "arti": "maaf",
+    "tags": [
+      "Bab 3",
+      "Ekspresi",
+      "Sopan Santun"
+    ]
+  },
+  {
+    "id": "b3_058",
+    "kanji": "お名前",
+    "kana": "おなまえ",
+    "arti": "nama",
+    "tags": [
+      "Bab 3",
+      "Keigo",
+      "Identitas"
+    ]
+  },
+  {
+    "id": "b3_059",
+    "kanji": "お仕事",
+    "kana": "おしごと",
+    "arti": "pekerjaan",
+    "tags": [
+      "Bab 3",
+      "Keigo",
+      "Profesi"
+    ]
+  },
+  {
+    "id": "b3_060",
+    "kanji": "お腹",
+    "kana": "おなか",
+    "arti": "perut",
+    "tags": [
+      "Bab 3",
+      "Anatomi",
+      "Keigo"
+    ]
+  },
+  {
+    "id": "b3_061",
+    "kanji": "お皿",
+    "kana": "おさら",
+    "arti": "piring",
+    "tags": [
+      "Bab 3",
+      "Benda",
+      "Alat Makan"
+    ]
+  },
+  {
+    "id": "b3_062",
+    "kanji": "お菓子",
+    "kana": "おかし",
+    "arti": "camilan",
+    "tags": [
+      "Bab 3",
+      "Makanan",
+      "Camilan"
+    ]
+  },
+  {
+    "id": "b3_063",
+    "kanji": "お茶碗",
+    "kana": "おちゃわん",
+    "arti": "mangkok",
+    "tags": [
+      "Bab 3",
+      "Benda",
+      "Alat Makan"
+    ]
+  },
+  {
+    "id": "b3_064",
+    "kanji": "ごかぞく (ご家族)",
+    "kana": "ごかぞく",
+    "arti": "keluarga",
+    "tags": [
+      "Bab 3",
+      "Keigo",
+      "Kazoku-Outer"
+    ]
+  },
+  {
+    "id": "b3_065",
+    "kanji": "ごあんない (ご案内)",
+    "kana": "ごあんない",
+    "arti": "panduan",
+    "tags": [
+      "Bab 3",
+      "Keigo",
+      "Informasi"
+    ]
+  },
+  {
+    "id": "b3_066",
+    "kanji": "ごあいさつ (ご挨拶)",
+    "kana": "ごあいさつ",
+    "arti": "salam/sambutan",
+    "tags": [
+      "Bab 3",
+      "Keigo",
+      "Sosial"
+    ]
+  },
+  {
+    "id": "b3_067",
+    "kanji": "ごいけん (ご意見)",
+    "kana": "ごいけん",
+    "arti": "pendapat",
+    "tags": [
+      "Bab 3",
+      "Keigo",
+      "Komunikasi"
+    ]
+  },
+  {
+    "id": "b3_068",
+    "kanji": "ご主人",
+    "kana": "ごしゅじん",
+    "arti": "suami (orang lain)",
+    "tags": [
+      "Bab 3",
+      "Keigo",
+      "Kazoku-Outer"
+    ]
+  },
+  {
+    "id": "b3_069",
+    "kanji": "ごけっこん (ご結婚)",
+    "kana": "ごけっこん",
+    "arti": "menikah",
+    "tags": [
+      "Bab 3",
+      "Keigo",
+      "Status"
+    ]
+  },
+  {
+    "id": "b3_070",
+    "kanji": "ごれんらく (ご連絡)",
+    "kana": "ごれんらく",
+    "arti": "menghubungi",
+    "tags": [
+      "Bab 3",
+      "Keigo",
+      "Komunikasi"
+    ]
+  },
+  {
+    "id": "b3_071",
+    "kanji": "面接",
+    "kana": "めんせつ",
+    "arti": "wawancara",
+    "tags": [
+      "Bab 3",
+      "Aktivitas",
+      "Profesional"
+    ]
+  },
+  {
+    "id": "b3_072",
+    "kanji": "いただきます (頂きます)",
+    "kana": "いただきます",
+    "arti": "menerima",
+    "tags": [
+      "Bab 3",
+      "Ekspresi",
+      "Sopan Santun"
+    ]
+  },
+  {
+    "id": "b3_073",
+    "kanji": "よばれています (呼ばれています)",
+    "kana": "よばれています",
+    "arti": "dipanggil",
+    "tags": [
+      "Bab 3",
+      "Kata Kerja",
+      "Pasif"
+    ]
+  },
+  {
+    "id": "b3_074",
+    "kanji": "〜ともうします (〜と申します)",
+    "kana": "〜ともうします",
+    "arti": "bernama~",
+    "tags": [
+      "Bab 3",
+      "Ekspresi",
+      "Perkenalan"
+    ]
+  },
+  {
+    "id": "b3_075",
+    "kanji": "〜才 (〜歳)",
+    "kana": "〜さい",
+    "arti": "~tahun",
+    "tags": [
+      "Bab 3",
+      "Numerik",
+      "Umur"
+    ]
+  },
+  {
+    "id": "b3_076",
+    "kanji": "以上",
+    "kana": "いじょう",
+    "arti": "Sekian / Demikian",
+    "tags": [
+      "Bab 3",
+      "Ekspresi",
+      "Penutup"
+    ]
+  },
+  {
+    "id": "b3_077",
+    "kanji": "趣味",
+    "kana": "しゅみ",
+    "arti": "hobi",
+    "tags": [
+      "Bab 3",
+      "Aktivitas",
+      "Preferensi"
+    ]
+  },
+  {
+    "id": "b3_078",
+    "kanji": "おせわになります (お世話になります)",
+    "kana": "おせわになります",
+    "arti": "akan merepotkan",
+    "tags": [
+      "Bab 3",
+      "Ekspresi",
+      "Sopan Santun"
+    ]
+  },
+  {
+    "id": "b3_079",
+    "kanji": "指導",
+    "kana": "しどう",
+    "arti": "arahan",
+    "tags": [
+      "Bab 3",
+      "Aktivitas",
+      "Pendidikan"
+    ]
+  },
+  {
+    "id": "b3_080",
+    "kanji": "入社",
+    "kana": "にゅうしゃ",
+    "arti": "masuk perusahaan",
+    "tags": [
+      "Bab 3",
+      "Aktivitas",
+      "Profesional"
+    ]
+  },
+  {
+    "id": "b3_081",
+    "kanji": "これから",
+    "kana": "これから",
+    "arti": "mulai sekarang",
+    "tags": [
+      "Bab 3",
+      "Keterangan Waktu"
+    ]
+  },
+  {
+    "id": "b3_082",
+    "kanji": "しごと (仕事)",
+    "kana": "しごと",
+    "arti": "pekerjaan",
+    "tags": [
+      "Bab 3",
+      "Aktivitas",
+      "Profesional"
+    ]
+  },
+  {
+    "id": "b3_083",
+    "kanji": "くすり (薬)",
+    "kana": "くすり",
+    "arti": "obat",
+    "tags": [
+      "Bab 3",
+      "Benda",
+      "Kesehatan"
+    ]
+  }
+]

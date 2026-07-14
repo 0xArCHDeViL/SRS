@@ -1,0 +1,915 @@
+[
+  {
+    "id": "b9_001",
+    "kanji": "行きます",
+    "kana": "いきます",
+    "arti": "pergi",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Pergerakan"
+    ]
+  },
+  {
+    "id": "b9_002",
+    "kanji": "来ます",
+    "kana": "きます",
+    "arti": "datang",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Pergerakan"
+    ]
+  },
+  {
+    "id": "b9_003",
+    "kanji": "帰ります",
+    "kana": "かえります",
+    "arti": "pulang",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Pergerakan"
+    ]
+  },
+  {
+    "id": "b9_004",
+    "kanji": "出します",
+    "kana": "だします",
+    "arti": "mengeluarkan",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Manipulasi Spasial"
+    ]
+  },
+  {
+    "id": "b9_005",
+    "kanji": "払います",
+    "kana": "はらいます",
+    "arti": "membayar",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Transaksi"
+    ]
+  },
+  {
+    "id": "b9_006",
+    "kanji": "迎えます",
+    "kana": "むかえます",
+    "arti": "menjemput",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Pergerakan Sosial"
+    ]
+  },
+  {
+    "id": "b9_007",
+    "kanji": "送ります",
+    "kana": "おくります",
+    "arti": "mengantar",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Pergerakan Sosial"
+    ]
+  },
+  {
+    "id": "b9_008",
+    "kanji": "勝ちます",
+    "kana": "かちます",
+    "arti": "menang",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Kompetisi"
+    ]
+  },
+  {
+    "id": "b9_009",
+    "kanji": "負けます",
+    "kana": "まけます",
+    "arti": "kalah",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Kompetisi"
+    ]
+  },
+  {
+    "id": "b9_010",
+    "kanji": "なぐります (殴ります)",
+    "kana": "なぐります",
+    "arti": "memukul",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Kekerasan Fisik"
+    ]
+  },
+  {
+    "id": "b9_011",
+    "kanji": "けります (蹴ります)",
+    "kana": "けります",
+    "arti": "menendang",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Kekerasan Fisik"
+    ]
+  },
+  {
+    "id": "b9_012",
+    "kanji": "あじわいます (味わいます)",
+    "kana": "あじわいます",
+    "arti": "mencicipi",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Indera"
+    ]
+  },
+  {
+    "id": "b9_013",
+    "kanji": "たまります (溜まります)",
+    "kana": "たまります",
+    "arti": "bertumpuk",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Kondisi Fisik"
+    ]
+  },
+  {
+    "id": "b9_014",
+    "kanji": "決まります",
+    "kana": "きまります",
+    "arti": "diputuskan",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Kognitif Pasif"
+    ]
+  },
+  {
+    "id": "b9_015",
+    "kanji": "通ります",
+    "kana": "とおります",
+    "arti": "melewati",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Pergerakan"
+    ]
+  },
+  {
+    "id": "b9_016",
+    "kanji": "通います",
+    "kana": "かよいます",
+    "arti": "pergi (PP)",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Pergerakan Rutin"
+    ]
+  },
+  {
+    "id": "b9_017",
+    "kanji": "迷います",
+    "kana": "まよいます",
+    "arti": "bingung",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Kondisi Mental"
+    ]
+  },
+  {
+    "id": "b9_018",
+    "kanji": "困ります",
+    "kana": "こまります",
+    "arti": "kesulitan",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Kondisi Mental"
+    ]
+  },
+  {
+    "id": "b9_019",
+    "kanji": "戻します",
+    "kana": "もどします",
+    "arti": "mengembalikan",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Manipulasi Spasial"
+    ]
+  },
+  {
+    "id": "b9_020",
+    "kanji": "戻ります",
+    "kana": "もどります",
+    "arti": "kembali",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Pergerakan"
+    ]
+  },
+  {
+    "id": "b9_021",
+    "kanji": "壊します",
+    "kana": "こわします",
+    "arti": "merusakkan",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Destruksi"
+    ]
+  },
+  {
+    "id": "b9_022",
+    "kanji": "決めます",
+    "kana": "きめます",
+    "arti": "memutuskan",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Kognitif Aktif"
+    ]
+  },
+  {
+    "id": "b9_023",
+    "kanji": "空きます",
+    "kana": "すきます",
+    "arti": "kosong",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Kondisi Spasial"
+    ]
+  },
+  {
+    "id": "b9_024",
+    "kanji": "空きます ",
+    "kana": "あきます",
+    "arti": "kosong",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Kondisi Spasial"
+    ]
+  },
+  {
+    "id": "b9_025",
+    "kanji": "行います",
+    "kana": "おこないます",
+    "arti": "menyelenggarakan",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Organisasi"
+    ]
+  },
+  {
+    "id": "b9_026",
+    "kanji": "選びます",
+    "kana": "えらびます",
+    "arti": "memilih",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Kognitif Aktif"
+    ]
+  },
+  {
+    "id": "b9_027",
+    "kanji": "さきます (咲きます)",
+    "kana": "さきます",
+    "arti": "mekar",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Alam"
+    ]
+  },
+  {
+    "id": "b9_028",
+    "kanji": "ふきます (吹きます)",
+    "kana": "ふきます",
+    "arti": "bertiup",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Cuaca"
+    ]
+  },
+  {
+    "id": "b9_029",
+    "kanji": "外します",
+    "kana": "はずします",
+    "arti": "melepas",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Manipulasi Fisik"
+    ]
+  },
+  {
+    "id": "b9_030",
+    "kanji": "要ります",
+    "kana": "いります",
+    "arti": "membutuhkan",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Kebutuhan"
+    ]
+  },
+  {
+    "id": "b9_031",
+    "kanji": "はなします (離します)",
+    "kana": "はなします",
+    "arti": "melepaskan",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Manipulasi Fisik"
+    ]
+  },
+  {
+    "id": "b9_032",
+    "kanji": "落とします",
+    "kana": "おとします",
+    "arti": "menjatuhkan",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Gravitasi"
+    ]
+  },
+  {
+    "id": "b9_033",
+    "kanji": "思います",
+    "kana": "おもいます",
+    "arti": "memikirkan",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Kognitif"
+    ]
+  },
+  {
+    "id": "b9_034",
+    "kanji": "倒します",
+    "kana": "たおします",
+    "arti": "meroboh",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Destruksi Fisik"
+    ]
+  },
+  {
+    "id": "b9_035",
+    "kanji": "流します",
+    "kana": "ながします",
+    "arti": "mengalirkan",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Fisika Cairan"
+    ]
+  },
+  {
+    "id": "b9_036",
+    "kanji": "よやくします (予約します)",
+    "kana": "よやくします",
+    "arti": "reservasi",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Transaksi Akademik"
+    ]
+  },
+  {
+    "id": "b9_037",
+    "kanji": "打ちます",
+    "kana": "うちます",
+    "arti": "memukul",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Kekerasan Fisik"
+    ]
+  },
+  {
+    "id": "b9_038",
+    "kanji": "逃げます",
+    "kana": "にげます",
+    "arti": "kabur",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Pergerakan Evasi"
+    ]
+  },
+  {
+    "id": "b9_039",
+    "kanji": "走ります",
+    "kana": "はしります",
+    "arti": "berlari",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Fisik"
+    ]
+  },
+  {
+    "id": "b9_040",
+    "kanji": "足します",
+    "kana": "たします",
+    "arti": "menambah",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Matematika"
+    ]
+  },
+  {
+    "id": "b9_041",
+    "kanji": "分けます",
+    "kana": "わけます",
+    "arti": "membagi",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Matematika"
+    ]
+  },
+  {
+    "id": "b9_042",
+    "kanji": "飛びます",
+    "kana": "とびます",
+    "arti": "terbang",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Pergerakan Udara"
+    ]
+  },
+  {
+    "id": "b9_043",
+    "kanji": "生きます",
+    "kana": "いきます",
+    "arti": "hidup",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Biologis"
+    ]
+  },
+  {
+    "id": "b9_044",
+    "kanji": "としをとります (年を取ります)",
+    "kana": "としをとります",
+    "arti": "menjadi tua",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Biologis"
+    ]
+  },
+  {
+    "id": "b9_045",
+    "kanji": "字",
+    "kana": "じ",
+    "arti": "huruf",
+    "tags": [
+      "Bab 9",
+      "Linguistik",
+      "Elemen Dasar"
+    ]
+  },
+  {
+    "id": "b9_046",
+    "kanji": "文",
+    "kana": "ぶん",
+    "arti": "kalimat",
+    "tags": [
+      "Bab 9",
+      "Linguistik",
+      "Sintaksis"
+    ]
+  },
+  {
+    "id": "b9_047",
+    "kanji": "文章",
+    "kana": "ぶんしょう",
+    "arti": "bacaan",
+    "tags": [
+      "Bab 9",
+      "Linguistik",
+      "Paragraf"
+    ]
+  },
+  {
+    "id": "b9_048",
+    "kanji": "例文",
+    "kana": "れいぶん",
+    "arti": "contoh kalimat",
+    "tags": [
+      "Bab 9",
+      "Linguistik",
+      "Sintaksis"
+    ]
+  },
+  {
+    "id": "b9_049",
+    "kanji": "ボタン",
+    "kana": "ボタン",
+    "arti": "tombol",
+    "tags": [
+      "Bab 9",
+      "Benda",
+      "Mekanisme"
+    ]
+  },
+  {
+    "id": "b9_050",
+    "kanji": "スイッチ",
+    "kana": "スイッチ",
+    "arti": "saklar",
+    "tags": [
+      "Bab 9",
+      "Benda",
+      "Mekanisme Listrik"
+    ]
+  },
+  {
+    "id": "b9_051",
+    "kanji": "ぼうし (帽子)",
+    "kana": "ぼうし",
+    "arti": "topi",
+    "tags": [
+      "Bab 9",
+      "Benda",
+      "Pakaian"
+    ]
+  },
+  {
+    "id": "b9_052",
+    "kanji": "ヒジャブ",
+    "kana": "ヒジャブ",
+    "arti": "hijab",
+    "tags": [
+      "Bab 9",
+      "Benda",
+      "Pakaian Keagamaan"
+    ]
+  },
+  {
+    "id": "b9_053",
+    "kanji": "ビジネス",
+    "kana": "ビジネス",
+    "arti": "bisnis",
+    "tags": [
+      "Bab 9",
+      "Abstrak",
+      "Profesional"
+    ]
+  },
+  {
+    "id": "b9_054",
+    "kanji": "レベル",
+    "kana": "レベル",
+    "arti": "level",
+    "tags": [
+      "Bab 9",
+      "Abstrak",
+      "Hierarki"
+    ]
+  },
+  {
+    "id": "b9_055",
+    "kanji": "会社",
+    "kana": "かいしゃ",
+    "arti": "perusahaan",
+    "tags": [
+      "Bab 9",
+      "Institusi",
+      "Komersial"
+    ]
+  },
+  {
+    "id": "b9_056",
+    "kanji": "相手",
+    "kana": "あいて",
+    "arti": "pasangan",
+    "tags": [
+      "Bab 9",
+      "Manusia",
+      "Relasi Sosial"
+    ]
+  },
+  {
+    "id": "b9_057",
+    "kanji": "ガールフレンド",
+    "kana": "ガールフレンド",
+    "arti": "pacar perempuan",
+    "tags": [
+      "Bab 9",
+      "Manusia",
+      "Relasi Romansa"
+    ]
+  },
+  {
+    "id": "b9_058",
+    "kanji": "ボーイフレンド",
+    "kana": "ボーイフレンド",
+    "arti": "pacar cowok",
+    "tags": [
+      "Bab 9",
+      "Manusia",
+      "Relasi Romansa"
+    ]
+  },
+  {
+    "id": "b9_059",
+    "kanji": "フレンド",
+    "kana": "フレンド",
+    "arti": "teman",
+    "tags": [
+      "Bab 9",
+      "Manusia",
+      "Relasi Sosial"
+    ]
+  },
+  {
+    "id": "b9_060",
+    "kanji": "おもちゃ (玩具)",
+    "kana": "おもちゃ",
+    "arti": "mainan",
+    "tags": [
+      "Bab 9",
+      "Benda",
+      "Hiburan"
+    ]
+  },
+  {
+    "id": "b9_061",
+    "kanji": "消します",
+    "kana": "けします",
+    "arti": "menghapus",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Destruksi Visual"
+    ]
+  },
+  {
+    "id": "b9_062",
+    "kanji": "押します",
+    "kana": "おします",
+    "arti": "menekan",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Gaya Fisik"
+    ]
+  },
+  {
+    "id": "b9_063",
+    "kanji": "引きます",
+    "kana": "ひきます",
+    "arti": "menarik",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Gaya Fisik"
+    ]
+  },
+  {
+    "id": "b9_064",
+    "kanji": "被ります",
+    "kana": "かぶります",
+    "arti": "memakai (topi)",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Aktivitas Berpakaian"
+    ]
+  },
+  {
+    "id": "b9_065",
+    "kanji": "開きます",
+    "kana": "ひらきます",
+    "arti": "membuka",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Aksi Mekanisme"
+    ]
+  },
+  {
+    "id": "b9_066",
+    "kanji": "閉じます",
+    "kana": "とじます",
+    "arti": "menutup",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Aksi Mekanisme"
+    ]
+  },
+  {
+    "id": "b9_067",
+    "kanji": "上げます",
+    "kana": "あげます",
+    "arti": "menaikkan",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Posisi Vertikal"
+    ]
+  },
+  {
+    "id": "b9_068",
+    "kanji": "下げます",
+    "kana": "さげます",
+    "arti": "menurunkan",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Posisi Vertikal"
+    ]
+  },
+  {
+    "id": "b9_069",
+    "kanji": "辞めます",
+    "kana": "やめます",
+    "arti": "berhenti",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Terminasi Status"
+    ]
+  },
+  {
+    "id": "b9_070",
+    "kanji": "会います",
+    "kana": "あいます",
+    "arti": "bertemu",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Interaksi Sosial"
+    ]
+  },
+  {
+    "id": "b9_071",
+    "kanji": "合います",
+    "kana": "あいます",
+    "arti": "cocok",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Kesesuaian"
+    ]
+  },
+  {
+    "id": "b9_072",
+    "kanji": "つきあいます (付き合います)",
+    "kana": "つきあいます",
+    "arti": "berpacaran",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Relasi Romansa"
+    ]
+  },
+  {
+    "id": "b9_073",
+    "kanji": "けっこんします (結婚します)",
+    "kana": "けっこんします",
+    "arti": "menikah",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Relasi Formal"
+    ]
+  },
+  {
+    "id": "b9_074",
+    "kanji": "こんやくします (婚約します)",
+    "kana": "こんやくします",
+    "arti": "bertunangan",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Relasi Formal"
+    ]
+  },
+  {
+    "id": "b9_075",
+    "kanji": "けんかします (喧嘩します)",
+    "kana": "けんかします",
+    "arti": "bertengkar",
+    "tags": [
+      "Bab 9",
+      "Kata Kerja",
+      "Konflik Sosial"
+    ]
+  },
+  {
+    "id": "b9_076",
+    "kanji": "べんきょうかい (勉強会)",
+    "kana": "べんきょうかい",
+    "arti": "belajar kelompok",
+    "tags": [
+      "Bab 9",
+      "Acara",
+      "Akademik Kolaboratif"
+    ]
+  },
+  {
+    "id": "b9_077",
+    "kanji": "イベント",
+    "kana": "イベント",
+    "arti": "even/acara",
+    "tags": [
+      "Bab 9",
+      "Acara",
+      "Umum"
+    ]
+  },
+  {
+    "id": "b9_078",
+    "kanji": "フェスティバル",
+    "kana": "フェスティバル",
+    "arti": "festival",
+    "tags": [
+      "Bab 9",
+      "Acara",
+      "Hiburan Publik"
+    ]
+  },
+  {
+    "id": "b9_079",
+    "kanji": "〜たいかい (〜大会)",
+    "kana": "〜たいかい",
+    "arti": "turnamen ~",
+    "tags": [
+      "Bab 9",
+      "Acara",
+      "Kompetisi Suffix"
+    ]
+  },
+  {
+    "id": "b9_080",
+    "kanji": "〜祭り",
+    "kana": "〜まつり",
+    "arti": "perayaan ~",
+    "tags": [
+      "Bab 9",
+      "Acara",
+      "Festival Suffix"
+    ]
+  },
+  {
+    "id": "b9_081",
+    "kanji": "ゆきまつり (雪祭り)",
+    "kana": "ゆきまつり",
+    "arti": "perayaan salju",
+    "tags": [
+      "Bab 9",
+      "Acara",
+      "Festival Alam"
+    ]
+  },
+  {
+    "id": "b9_082",
+    "kanji": "なつまつり (夏祭り)",
+    "kana": "なつまつり",
+    "arti": "perayaan musim panas",
+    "tags": [
+      "Bab 9",
+      "Acara",
+      "Festival Alam"
+    ]
+  },
+  {
+    "id": "b9_083",
+    "kanji": "試合",
+    "kana": "しあい",
+    "arti": "pertandingan",
+    "tags": [
+      "Bab 9",
+      "Acara",
+      "Kompetisi"
+    ]
+  }
+]

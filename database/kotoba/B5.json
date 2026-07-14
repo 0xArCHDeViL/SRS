@@ -1,0 +1,1683 @@
+[
+  {
+    "id": "b5_001",
+    "kanji": "山",
+    "kana": "やま",
+    "arti": "gunung",
+    "tags": [
+      "Bab 5",
+      "Alam",
+      "Geografi"
+    ]
+  },
+  {
+    "id": "b5_002",
+    "kanji": "川",
+    "kana": "かわ",
+    "arti": "sungai",
+    "tags": [
+      "Bab 5",
+      "Alam",
+      "Geografi"
+    ]
+  },
+  {
+    "id": "b5_003",
+    "kanji": "木",
+    "kana": "き",
+    "arti": "pohon",
+    "tags": [
+      "Bab 5",
+      "Alam",
+      "Flora"
+    ]
+  },
+  {
+    "id": "b5_004",
+    "kanji": "花",
+    "kana": "はな",
+    "arti": "bunga",
+    "tags": [
+      "Bab 5",
+      "Alam",
+      "Flora"
+    ]
+  },
+  {
+    "id": "b5_005",
+    "kanji": "世界",
+    "kana": "せかい",
+    "arti": "dunia",
+    "tags": [
+      "Bab 5",
+      "Geografi",
+      "Global"
+    ]
+  },
+  {
+    "id": "b5_006",
+    "kanji": "地図",
+    "kana": "ちず",
+    "arti": "peta",
+    "tags": [
+      "Bab 5",
+      "Benda",
+      "Navigasi"
+    ]
+  },
+  {
+    "id": "b5_007",
+    "kanji": "ビル",
+    "kana": "ビル",
+    "arti": "gedung / bangunan",
+    "tags": [
+      "Bab 5",
+      "Infrastruktur",
+      "Kota"
+    ]
+  },
+  {
+    "id": "b5_008",
+    "kanji": "図書館",
+    "kana": "としょかん",
+    "arti": "perpustakaan",
+    "tags": [
+      "Bab 5",
+      "Fasilitas Publik",
+      "Akademik"
+    ]
+  },
+  {
+    "id": "b5_009",
+    "kanji": "ゆうびんきょく (郵便局)",
+    "kana": "ゆうびんきょく",
+    "arti": "kantor pos",
+    "tags": [
+      "Bab 5",
+      "Fasilitas Publik"
+    ]
+  },
+  {
+    "id": "b5_010",
+    "kanji": "市役所",
+    "kana": "しやくしょ",
+    "arti": "balai kota",
+    "tags": [
+      "Bab 5",
+      "Fasilitas Publik",
+      "Pemerintahan"
+    ]
+  },
+  {
+    "id": "b5_011",
+    "kanji": "町",
+    "kana": "まち",
+    "arti": "kota",
+    "tags": [
+      "Bab 5",
+      "Geografi",
+      "Kota"
+    ]
+  },
+  {
+    "id": "b5_012",
+    "kanji": "映画館",
+    "kana": "えいがかん",
+    "arti": "gedung bioskop",
+    "tags": [
+      "Bab 5",
+      "Fasilitas Publik",
+      "Hiburan"
+    ]
+  },
+  {
+    "id": "b5_013",
+    "kanji": "公園",
+    "kana": "こうえん",
+    "arti": "taman",
+    "tags": [
+      "Bab 5",
+      "Fasilitas Publik",
+      "Rekreasi"
+    ]
+  },
+  {
+    "id": "b5_014",
+    "kanji": "広場",
+    "kana": "ひろば",
+    "arti": "lapangan",
+    "tags": [
+      "Bab 5",
+      "Fasilitas Publik",
+      "Rekreasi"
+    ]
+  },
+  {
+    "id": "b5_015",
+    "kanji": "バス停",
+    "kana": "バスてい",
+    "arti": "halte bus",
+    "tags": [
+      "Bab 5",
+      "Infrastruktur",
+      "Transportasi"
+    ]
+  },
+  {
+    "id": "b5_016",
+    "kanji": "ターミナル",
+    "kana": "ターミナル",
+    "arti": "terminal",
+    "tags": [
+      "Bab 5",
+      "Infrastruktur",
+      "Transportasi"
+    ]
+  },
+  {
+    "id": "b5_017",
+    "kanji": "空港",
+    "kana": "くうこう",
+    "arti": "bandara",
+    "tags": [
+      "Bab 5",
+      "Infrastruktur",
+      "Transportasi"
+    ]
+  },
+  {
+    "id": "b5_018",
+    "kanji": "高い",
+    "kana": "たかい",
+    "arti": "tinggi; mahal",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_019",
+    "kanji": "低い",
+    "kana": "ひくい",
+    "arti": "rendah",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_020",
+    "kanji": "広い",
+    "kana": "ひろい",
+    "arti": "luas",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_021",
+    "kanji": "狭い",
+    "kana": "せまい",
+    "arti": "sempit",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_022",
+    "kanji": "長い",
+    "kana": "ながい",
+    "arti": "panjang",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_023",
+    "kanji": "短い",
+    "kana": "みじかい",
+    "arti": "pendek",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_024",
+    "kanji": "新しい",
+    "kana": "あたらしい",
+    "arti": "baru",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_025",
+    "kanji": "古い",
+    "kana": "ふるい",
+    "arti": "lama; usang; tua",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_026",
+    "kanji": "遠い",
+    "kana": "とおい",
+    "arti": "jauh",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_027",
+    "kanji": "近い",
+    "kana": "ちかい",
+    "arti": "dekat",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_028",
+    "kanji": "おいしい (美味しい)",
+    "kana": "おいしい",
+    "arti": "enak",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_029",
+    "kanji": "まずい (不味い)",
+    "kana": "まずい",
+    "arti": "tidak enak*",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_030",
+    "kanji": "にぎやか (賑やか)",
+    "kana": "にぎやか（な）",
+    "arti": "ramai",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_031",
+    "kanji": "しずか (静か)",
+    "kana": "しずか（な）",
+    "arti": "tenang",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_032",
+    "kanji": "きれい (綺麗)",
+    "kana": "きれい（な）",
+    "arti": "cantik; bersih",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_033",
+    "kanji": "ハンサム",
+    "kana": "ハンサム（な）",
+    "arti": "tampan",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_034",
+    "kanji": "べんり (便利)",
+    "kana": "べんり（な）",
+    "arti": "praktis",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_035",
+    "kanji": "ジャカルタ",
+    "kana": "ジャカルタ",
+    "arti": "Jakarta",
+    "tags": [
+      "Bab 5",
+      "Geografi",
+      "Kota"
+    ]
+  },
+  {
+    "id": "b5_036",
+    "kanji": "バンドン",
+    "kana": "バンドン",
+    "arti": "Bandung",
+    "tags": [
+      "Bab 5",
+      "Geografi",
+      "Kota"
+    ]
+  },
+  {
+    "id": "b5_037",
+    "kanji": "スラバヤ",
+    "kana": "スラバヤ",
+    "arti": "Surabaya",
+    "tags": [
+      "Bab 5",
+      "Geografi",
+      "Kota"
+    ]
+  },
+  {
+    "id": "b5_038",
+    "kanji": "メダン",
+    "kana": "メダン",
+    "arti": "Medan",
+    "tags": [
+      "Bab 5",
+      "Geografi",
+      "Kota"
+    ]
+  },
+  {
+    "id": "b5_039",
+    "kanji": "ジョグジャカルタ",
+    "kana": "ジョグジャカルタ",
+    "arti": "Yogyakarta",
+    "tags": [
+      "Bab 5",
+      "Geografi",
+      "Kota"
+    ]
+  },
+  {
+    "id": "b5_040",
+    "kanji": "セマラン",
+    "kana": "セマラン",
+    "arti": "Semarang",
+    "tags": [
+      "Bab 5",
+      "Geografi",
+      "Kota"
+    ]
+  },
+  {
+    "id": "b5_041",
+    "kanji": "バリ",
+    "kana": "バリ",
+    "arti": "Bali",
+    "tags": [
+      "Bab 5",
+      "Geografi",
+      "Provinsi"
+    ]
+  },
+  {
+    "id": "b5_042",
+    "kanji": "バリ島",
+    "kana": "バリとう",
+    "arti": "Pulau Bali",
+    "tags": [
+      "Bab 5",
+      "Geografi",
+      "Pulau"
+    ]
+  },
+  {
+    "id": "b5_043",
+    "kanji": "ジャワ島",
+    "kana": "ジャワとう",
+    "arti": "Pulau Jawa",
+    "tags": [
+      "Bab 5",
+      "Geografi",
+      "Pulau"
+    ]
+  },
+  {
+    "id": "b5_044",
+    "kanji": "島",
+    "kana": "しま",
+    "arti": "pulau",
+    "tags": [
+      "Bab 5",
+      "Geografi",
+      "Pulau"
+    ]
+  },
+  {
+    "id": "b5_045",
+    "kanji": "都会",
+    "kana": "とかい",
+    "arti": "kota besar",
+    "tags": [
+      "Bab 5",
+      "Geografi",
+      "Kota"
+    ]
+  },
+  {
+    "id": "b5_046",
+    "kanji": "首都",
+    "kana": "しゅと",
+    "arti": "ibu kota",
+    "tags": [
+      "Bab 5",
+      "Geografi",
+      "Kota"
+    ]
+  },
+  {
+    "id": "b5_047",
+    "kanji": "所",
+    "kana": "ところ",
+    "arti": "tempat",
+    "tags": [
+      "Bab 5",
+      "Benda Abstrak",
+      "Lokasi"
+    ]
+  },
+  {
+    "id": "b5_048",
+    "kanji": "場所",
+    "kana": "ばしょ",
+    "arti": "tempat",
+    "tags": [
+      "Bab 5",
+      "Benda Abstrak",
+      "Lokasi"
+    ]
+  },
+  {
+    "id": "b5_049",
+    "kanji": "大きい",
+    "kana": "おおきい",
+    "arti": "besar (predikat)",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_050",
+    "kanji": "ちいさい (小さい)",
+    "kana": "ちいさい",
+    "arti": "kecil (predikat)",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_051",
+    "kanji": "涼しい",
+    "kana": "すずしい",
+    "arti": "sejuk",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Cuaca"
+    ]
+  },
+  {
+    "id": "b5_052",
+    "kanji": "暑い",
+    "kana": "あつい",
+    "arti": "panas (cuaca)",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Cuaca"
+    ]
+  },
+  {
+    "id": "b5_053",
+    "kanji": "寒い",
+    "kana": "さむい",
+    "arti": "dingin (cuaca)",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Cuaca"
+    ]
+  },
+  {
+    "id": "b5_054",
+    "kanji": "忙しい",
+    "kana": "いそがしい",
+    "arti": "sibuk",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_055",
+    "kanji": "うるさい (煩い)",
+    "kana": "うるさい",
+    "arti": "berisik / bising",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_056",
+    "kanji": "汚い",
+    "kana": "きたない",
+    "arti": "kotor",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_057",
+    "kanji": "厳しい",
+    "kana": "きびしい",
+    "arti": "disiplin / tegas",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_058",
+    "kanji": "明るい",
+    "kana": "あかるい",
+    "arti": "terang",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_059",
+    "kanji": "暗い",
+    "kana": "くらい",
+    "arti": "gelap",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_060",
+    "kanji": "ちいさ (小さな)",
+    "kana": "ちいさ（な）",
+    "arti": "kecil (modifikator KB)",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Modifikator"
+    ]
+  },
+  {
+    "id": "b5_061",
+    "kanji": "おおき (大きな)",
+    "kana": "おおき（な）",
+    "arti": "besar (modifikator KB)",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Modifikator"
+    ]
+  },
+  {
+    "id": "b5_062",
+    "kanji": "ばか (馬鹿)",
+    "kana": "ばか（な）",
+    "arti": "bodoh",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_063",
+    "kanji": "あんぜん (安全)",
+    "kana": "あんぜん（な）",
+    "arti": "aman",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_064",
+    "kanji": "きけん (危険)",
+    "kana": "きけん（な）",
+    "arti": "bahaya",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_065",
+    "kanji": "ふべん (不便)",
+    "kana": "ふべん（な）",
+    "arti": "tidak praktis",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_066",
+    "kanji": "じょうぶ (丈夫)",
+    "kana": "じょうぶ（な）",
+    "arti": "kokoh",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_067",
+    "kanji": "だいじょうぶ (大丈夫)",
+    "kana": "だいじょうぶ（な）",
+    "arti": "baik-baik saja",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_068",
+    "kanji": "かんたん (簡単)",
+    "kana": "かんたん（な）",
+    "arti": "mudah",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_069",
+    "kanji": "だいじ (大事)",
+    "kana": "だいじ（な）",
+    "arti": "penting",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_070",
+    "kanji": "ざんねん (残念)",
+    "kana": "ざんねん（な）",
+    "arti": "(rasa kecewa)",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_071",
+    "kanji": "まあまあ",
+    "kana": "まあまあ（な）",
+    "arti": "lumayan",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_072",
+    "kanji": "どう",
+    "kana": "どう",
+    "arti": "bagaimana",
+    "tags": [
+      "Bab 5",
+      "Kata Tanya",
+      "Kondisi"
+    ]
+  },
+  {
+    "id": "b5_073",
+    "kanji": "いかが",
+    "kana": "いかが",
+    "arti": "bagaimana (sopan)",
+    "tags": [
+      "Bab 5",
+      "Kata Tanya",
+      "Keigo"
+    ]
+  },
+  {
+    "id": "b5_074",
+    "kanji": "どんな KB",
+    "kana": "どんな KB",
+    "arti": "KB yang bagaimana",
+    "tags": [
+      "Bab 5",
+      "Kata Tanya",
+      "Modifikator"
+    ]
+  },
+  {
+    "id": "b5_075",
+    "kanji": "人",
+    "kana": "ひと",
+    "arti": "orang",
+    "tags": [
+      "Bab 5",
+      "Manusia"
+    ]
+  },
+  {
+    "id": "b5_076",
+    "kanji": "体",
+    "kana": "からだ",
+    "arti": "badan / tubuh",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_077",
+    "kanji": "目",
+    "kana": "め",
+    "arti": "mata",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_078",
+    "kanji": "はな (鼻)",
+    "kana": "はな",
+    "arti": "hidung",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_079",
+    "kanji": "口",
+    "kana": "くち",
+    "arti": "mulut",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_080",
+    "kanji": "耳",
+    "kana": "みみ",
+    "arti": "telinga",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_081",
+    "kanji": "首",
+    "kana": "くび",
+    "arti": "leher",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_082",
+    "kanji": "手",
+    "kana": "て",
+    "arti": "tangan",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_083",
+    "kanji": "足",
+    "kana": "あし",
+    "arti": "kaki",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_084",
+    "kanji": "指",
+    "kana": "ゆび",
+    "arti": "jari",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_085",
+    "kanji": "背",
+    "kana": "せ",
+    "arti": "punggung / perawakan",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_086",
+    "kanji": "頭",
+    "kana": "あたま",
+    "arti": "kepala",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_087",
+    "kanji": "肩",
+    "kana": "かた",
+    "arti": "bahu",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_088",
+    "kanji": "肌",
+    "kana": "はだ",
+    "arti": "kulit",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_089",
+    "kanji": "歯",
+    "kana": "は",
+    "arti": "gigi",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_090",
+    "kanji": "顔",
+    "kana": "かお",
+    "arti": "wajah",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_091",
+    "kanji": "髪",
+    "kana": "かみ",
+    "arti": "rambut",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_092",
+    "kanji": "まゆげ (眉毛)",
+    "kana": "まゆげ",
+    "arti": "alis",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_093",
+    "kanji": "まつげ (睫毛)",
+    "kana": "まつげ",
+    "arti": "bulu mata",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_094",
+    "kanji": "ひげ (髭)",
+    "kana": "ひげ",
+    "arti": "jenggot",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_095",
+    "kanji": "くちひげ (口髭)",
+    "kana": "くちひげ",
+    "arti": "kumis",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_096",
+    "kanji": "ひじ (肘)",
+    "kana": "ひじ",
+    "arti": "siku",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_097",
+    "kanji": "ひざ (膝)",
+    "kana": "ひざ",
+    "arti": "lutut",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_098",
+    "kanji": "むね (胸)",
+    "kana": "むね",
+    "arti": "dada",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_099",
+    "kanji": "うで (腕)",
+    "kana": "うで",
+    "arti": "lengan",
+    "tags": [
+      "Bab 5",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_100",
+    "kanji": "細い",
+    "kana": "ほそい",
+    "arti": "kurus / tipis",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_101",
+    "kanji": "太い",
+    "kana": "ふとい",
+    "arti": "gemuk / tebal",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_102",
+    "kanji": "良い",
+    "kana": "いい／よい＊",
+    "arti": "bagus",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_103",
+    "kanji": "悪い",
+    "kana": "わるい",
+    "arti": "jelek / buruk",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_104",
+    "kanji": "だるい (怠い)",
+    "kana": "だるい",
+    "arti": "lemas",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_105",
+    "kanji": "軽い",
+    "kana": "かるい",
+    "arti": "ringan",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_106",
+    "kanji": "重い",
+    "kana": "おもい",
+    "arti": "berat",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_107",
+    "kanji": "痛い",
+    "kana": "いたい",
+    "arti": "sakit",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Kondisi Medis"
+    ]
+  },
+  {
+    "id": "b5_108",
+    "kanji": "強い",
+    "kana": "つよい",
+    "arti": "kuat",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_109",
+    "kanji": "弱い",
+    "kana": "よわい",
+    "arti": "lemah",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_110",
+    "kanji": "丸い",
+    "kana": "まるい",
+    "arti": "bulat",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Bentuk"
+    ]
+  },
+  {
+    "id": "b5_111",
+    "kanji": "かわいい (可愛い)",
+    "kana": "かわいい",
+    "arti": "imut",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_112",
+    "kanji": "黒い",
+    "kana": "くろい",
+    "arti": "hitam",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Warna"
+    ]
+  },
+  {
+    "id": "b5_113",
+    "kanji": "白い",
+    "kana": "しろい",
+    "arti": "putih",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Warna"
+    ]
+  },
+  {
+    "id": "b5_114",
+    "kanji": "あつい (厚い)",
+    "kana": "あつい",
+    "arti": "tebal (dimensi benda)",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Dimensi"
+    ]
+  },
+  {
+    "id": "b5_115",
+    "kanji": "うすい (薄い)",
+    "kana": "うすい",
+    "arti": "tipis / encer",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Dimensi"
+    ]
+  },
+  {
+    "id": "b5_116",
+    "kanji": "赤い",
+    "kana": "あかい",
+    "arti": "merah",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Warna"
+    ]
+  },
+  {
+    "id": "b5_117",
+    "kanji": "怖い",
+    "kana": "こわい",
+    "arti": "takut / menakutkan",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Emosi"
+    ]
+  },
+  {
+    "id": "b5_118",
+    "kanji": "やさしい (優しい)",
+    "kana": "やさしい",
+    "arti": "baik hati",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Karakter"
+    ]
+  },
+  {
+    "id": "b5_119",
+    "kanji": "しんせつ (親切な)",
+    "kana": "しんせつ（な）",
+    "arti": "baik hati / ramah",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi",
+      "Karakter"
+    ]
+  },
+  {
+    "id": "b5_120",
+    "kanji": "たいせつ (大切な)",
+    "kana": "たいせつ（な）",
+    "arti": "penting / berharga",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_121",
+    "kanji": "へん (変な)",
+    "kana": "へん（な）",
+    "arti": "aneh",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_122",
+    "kanji": "わがまま (我儘な)",
+    "kana": "わがまま（な）",
+    "arti": "egois",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi",
+      "Karakter"
+    ]
+  },
+  {
+    "id": "b5_123",
+    "kanji": "道",
+    "kana": "みち",
+    "arti": "jalan",
+    "tags": [
+      "Bab 5",
+      "Infrastruktur",
+      "Transportasi"
+    ]
+  },
+  {
+    "id": "b5_124",
+    "kanji": "建物",
+    "kana": "たてもの",
+    "arti": "bangunan",
+    "tags": [
+      "Bab 5",
+      "Infrastruktur",
+      "Arsitektur"
+    ]
+  },
+  {
+    "id": "b5_125",
+    "kanji": "のりば (乗り場)",
+    "kana": "のりば",
+    "arti": "tempat naik (taksi)",
+    "tags": [
+      "Bab 5",
+      "Infrastruktur",
+      "Transportasi"
+    ]
+  },
+  {
+    "id": "b5_126",
+    "kanji": "エスカレーター",
+    "kana": "エスカレーター",
+    "arti": "eskalator",
+    "tags": [
+      "Bab 5",
+      "Fasilitas Publik",
+      "Bangunan"
+    ]
+  },
+  {
+    "id": "b5_127",
+    "kanji": "エレベーター",
+    "kana": "エレベーター",
+    "arti": "elevator",
+    "tags": [
+      "Bab 5",
+      "Fasilitas Publik",
+      "Bangunan"
+    ]
+  },
+  {
+    "id": "b5_128",
+    "kanji": "かいだん (階段)",
+    "kana": "かいだん",
+    "arti": "tangga",
+    "tags": [
+      "Bab 5",
+      "Infrastruktur",
+      "Bangunan"
+    ]
+  },
+  {
+    "id": "b5_129",
+    "kanji": "色",
+    "kana": "いろ",
+    "arti": "warna",
+    "tags": [
+      "Bab 5",
+      "Benda Abstrak",
+      "Kategori"
+    ]
+  },
+  {
+    "id": "b5_130",
+    "kanji": "けいたい (携帯)",
+    "kana": "けいたい",
+    "arti": "HP / ponsel",
+    "tags": [
+      "Bab 5",
+      "Elektronik",
+      "Benda"
+    ]
+  },
+  {
+    "id": "b5_131",
+    "kanji": "ちょうし (調子)",
+    "kana": "ちょうし",
+    "arti": "kondisi tubuh",
+    "tags": [
+      "Bab 5",
+      "Kondisi Medis",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_132",
+    "kanji": "たいちょう (体調)",
+    "kana": "たいちょう",
+    "arti": "kondisi tubuh",
+    "tags": [
+      "Bab 5",
+      "Kondisi Medis",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "b5_133",
+    "kanji": "動物園",
+    "kana": "どうぶつえん",
+    "arti": "kebun binatang",
+    "tags": [
+      "Bab 5",
+      "Fasilitas Publik",
+      "Rekreasi"
+    ]
+  },
+  {
+    "id": "b5_134",
+    "kanji": "早い",
+    "kana": "はやい",
+    "arti": "cepat",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Kondisi"
+    ]
+  },
+  {
+    "id": "b5_135",
+    "kanji": "遅い",
+    "kana": "おそい",
+    "arti": "lambat",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Kondisi"
+    ]
+  },
+  {
+    "id": "b5_136",
+    "kanji": "甘い",
+    "kana": "あまい",
+    "arti": "manis",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Rasa"
+    ]
+  },
+  {
+    "id": "b5_137",
+    "kanji": "にがい (苦い)",
+    "kana": "にがい",
+    "arti": "pahit",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Rasa"
+    ]
+  },
+  {
+    "id": "b5_138",
+    "kanji": "辛い",
+    "kana": "からい",
+    "arti": "pedas",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Rasa"
+    ]
+  },
+  {
+    "id": "b5_139",
+    "kanji": "嫌い",
+    "kana": "きらい",
+    "arti": "benci",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi",
+      "Emosi"
+    ]
+  },
+  {
+    "id": "b5_140",
+    "kanji": "ほしい (欲しい)",
+    "kana": "ほしい",
+    "arti": "ingin",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Emosi"
+    ]
+  },
+  {
+    "id": "b5_141",
+    "kanji": "すき (好きな)",
+    "kana": "すき（な）",
+    "arti": "suka",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi",
+      "Emosi"
+    ]
+  },
+  {
+    "id": "b5_142",
+    "kanji": "けっこう (結構な)",
+    "kana": "けっこう（な）",
+    "arti": "cukup",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "Na-Keiyoushi",
+      "Tingkat"
+    ]
+  },
+  {
+    "id": "b5_143",
+    "kanji": "さびしい (寂しい)",
+    "kana": "さびしい",
+    "arti": "kesepian",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi",
+      "Emosi"
+    ]
+  },
+  {
+    "id": "b5_144",
+    "kanji": "こまかい (細かい)",
+    "kana": "こまかい",
+    "arti": "detail / receh (uang)",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_145",
+    "kanji": "めずらしい (珍しい)",
+    "kana": "めずらしい",
+    "arti": "aneh / langka",
+    "tags": [
+      "Bab 5",
+      "Kata Sifat",
+      "I-Keiyoushi"
+    ]
+  },
+  {
+    "id": "b5_146",
+    "kanji": "いちばん 〜 (一番 〜)",
+    "kana": "いちばん 〜",
+    "arti": "paling ~",
+    "tags": [
+      "Bab 5",
+      "Kata Keterangan",
+      "Tingkatan"
+    ]
+  },
+  {
+    "id": "b5_147",
+    "kanji": "とても 〜",
+    "kana": "とても 〜",
+    "arti": "sangat ~",
+    "tags": [
+      "Bab 5",
+      "Kata Keterangan",
+      "Tingkatan"
+    ]
+  },
+  {
+    "id": "b5_148",
+    "kanji": "すごく 〜 (凄く 〜)",
+    "kana": "すごく 〜",
+    "arti": "sangat ~",
+    "tags": [
+      "Bab 5",
+      "Kata Keterangan",
+      "Tingkatan"
+    ]
+  },
+  {
+    "id": "b5_149",
+    "kanji": "もっと 〜",
+    "kana": "もっと 〜",
+    "arti": "lebih ~",
+    "tags": [
+      "Bab 5",
+      "Kata Keterangan",
+      "Tingkatan"
+    ]
+  },
+  {
+    "id": "b5_150",
+    "kanji": "ちょっと 〜",
+    "kana": "ちょっと 〜",
+    "arti": "agak ~",
+    "tags": [
+      "Bab 5",
+      "Kata Keterangan",
+      "Tingkatan"
+    ]
+  },
+  {
+    "id": "b5_151",
+    "kanji": "あまり 〜くない",
+    "kana": "あまり 〜くない",
+    "arti": "tidak begitu ~",
+    "tags": [
+      "Bab 5",
+      "Kata Keterangan",
+      "Negatif"
+    ]
+  },
+  {
+    "id": "b5_152",
+    "kanji": "ぜんぜん 〜くない (全然 〜くない)",
+    "kana": "ぜんぜん 〜くない",
+    "arti": "sama sekali tidak ~",
+    "tags": [
+      "Bab 5",
+      "Kata Keterangan",
+      "Negatif Absolut"
+    ]
+  },
+  {
+    "id": "b5_153",
+    "kanji": "かなり 〜",
+    "kana": "かなり 〜",
+    "arti": "lumayan ~",
+    "tags": [
+      "Bab 5",
+      "Kata Keterangan",
+      "Tingkatan"
+    ]
+  }
+]

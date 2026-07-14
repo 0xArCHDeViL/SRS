@@ -1,0 +1,1852 @@
+[
+  {
+    "id": "b4_001",
+    "kanji": "ソファ",
+    "kana": "ソファ",
+    "arti": "sofa",
+    "tags": [
+      "Bab 4",
+      "Perabotan"
+    ]
+  },
+  {
+    "id": "b4_002",
+    "kanji": "大学生",
+    "kana": "だいがくせい",
+    "arti": "mahasiswa",
+    "tags": [
+      "Bab 4",
+      "Jabatan",
+      "Akademik"
+    ]
+  },
+  {
+    "id": "b4_003",
+    "kanji": "机",
+    "kana": "つくえ",
+    "arti": "meja",
+    "tags": [
+      "Bab 4",
+      "Perabotan"
+    ]
+  },
+  {
+    "id": "b4_004",
+    "kanji": "校長",
+    "kana": "こうちょう",
+    "arti": "kepala sekolah",
+    "tags": [
+      "Bab 4",
+      "Jabatan",
+      "Akademik"
+    ]
+  },
+  {
+    "id": "b4_005",
+    "kanji": "テーブル",
+    "kana": "テーブル",
+    "arti": "meja",
+    "tags": [
+      "Bab 4",
+      "Perabotan"
+    ]
+  },
+  {
+    "id": "b4_006",
+    "kanji": "副校長",
+    "kana": "ふくこうちょう",
+    "arti": "wakil kepala sekolah",
+    "tags": [
+      "Bab 4",
+      "Jabatan",
+      "Akademik"
+    ]
+  },
+  {
+    "id": "b4_007",
+    "kanji": "椅子",
+    "kana": "いす",
+    "arti": "kursi",
+    "tags": [
+      "Bab 4",
+      "Perabotan"
+    ]
+  },
+  {
+    "id": "b4_008",
+    "kanji": "スタッフ",
+    "kana": "スタッフ",
+    "arti": "staff",
+    "tags": [
+      "Bab 4",
+      "Jabatan",
+      "Profesional"
+    ]
+  },
+  {
+    "id": "b4_009",
+    "kanji": "ストーブ",
+    "kana": "ストーブ",
+    "arti": "stobu",
+    "tags": [
+      "Bab 4",
+      "Perabotan",
+      "Elektronik"
+    ]
+  },
+  {
+    "id": "b4_010",
+    "kanji": "社長",
+    "kana": "しゃちょう",
+    "arti": "pimpinan perusahaan",
+    "tags": [
+      "Bab 4",
+      "Jabatan",
+      "Bisnis"
+    ]
+  },
+  {
+    "id": "b4_011",
+    "kanji": "エアコン",
+    "kana": "エアコン",
+    "arti": "AC",
+    "tags": [
+      "Bab 4",
+      "Perabotan",
+      "Elektronik"
+    ]
+  },
+  {
+    "id": "b4_012",
+    "kanji": "部長",
+    "kana": "ぶちょう",
+    "arti": "menejer",
+    "tags": [
+      "Bab 4",
+      "Jabatan",
+      "Bisnis"
+    ]
+  },
+  {
+    "id": "b4_013",
+    "kanji": "写真",
+    "kana": "しゃしん",
+    "arti": "foto",
+    "tags": [
+      "Bab 4",
+      "Benda"
+    ]
+  },
+  {
+    "id": "b4_014",
+    "kanji": "課長",
+    "kana": "かちょう",
+    "arti": "kepala bagian",
+    "tags": [
+      "Bab 4",
+      "Jabatan",
+      "Bisnis"
+    ]
+  },
+  {
+    "id": "b4_015",
+    "kanji": "炊飯器",
+    "kana": "すいはんき",
+    "arti": "penanak nasi",
+    "tags": [
+      "Bab 4",
+      "Perabotan",
+      "Elektronik"
+    ]
+  },
+  {
+    "id": "b4_016",
+    "kanji": "係長",
+    "kana": "かかりちょう",
+    "arti": "kepala seksi",
+    "tags": [
+      "Bab 4",
+      "Jabatan",
+      "Bisnis"
+    ]
+  },
+  {
+    "id": "b4_017",
+    "kanji": "冷蔵庫",
+    "kana": "れいぞうこ",
+    "arti": "kulkas",
+    "tags": [
+      "Bab 4",
+      "Perabotan",
+      "Elektronik"
+    ]
+  },
+  {
+    "id": "b4_018",
+    "kanji": "運転手",
+    "kana": "うんてんしゅ",
+    "arti": "supir",
+    "tags": [
+      "Bab 4",
+      "Jabatan",
+      "Profesi"
+    ]
+  },
+  {
+    "id": "b4_019",
+    "kanji": "ガスコンロ",
+    "kana": "ガスコンロ",
+    "arti": "kompor",
+    "tags": [
+      "Bab 4",
+      "Perabotan"
+    ]
+  },
+  {
+    "id": "b4_020",
+    "kanji": "管理人",
+    "kana": "かんりにん",
+    "arti": "pengelola",
+    "tags": [
+      "Bab 4",
+      "Jabatan",
+      "Profesi"
+    ]
+  },
+  {
+    "id": "b4_021",
+    "kanji": "電子レンジ",
+    "kana": "でんしレンジ",
+    "arti": "microwave",
+    "tags": [
+      "Bab 4",
+      "Perabotan",
+      "Elektronik"
+    ]
+  },
+  {
+    "id": "b4_022",
+    "kanji": "店員",
+    "kana": "てんいん",
+    "arti": "pegawai toko",
+    "tags": [
+      "Bab 4",
+      "Jabatan",
+      "Profesi"
+    ]
+  },
+  {
+    "id": "b4_023",
+    "kanji": "ふとん (布団)",
+    "kana": "ふとん",
+    "arti": "futon",
+    "tags": [
+      "Bab 4",
+      "Perabotan",
+      "Tidur"
+    ]
+  },
+  {
+    "id": "b4_024",
+    "kanji": "お客様",
+    "kana": "おきゃくさま",
+    "arti": "pelanggan",
+    "tags": [
+      "Bab 4",
+      "Jabatan",
+      "Keigo"
+    ]
+  },
+  {
+    "id": "b4_025",
+    "kanji": "テスト",
+    "kana": "テスト",
+    "arti": "tes",
+    "tags": [
+      "Bab 4",
+      "Akademik",
+      "Evaluasi"
+    ]
+  },
+  {
+    "id": "b4_026",
+    "kanji": "猫",
+    "kana": "ねこ",
+    "arti": "kucing",
+    "tags": [
+      "Bab 4",
+      "Hewan"
+    ]
+  },
+  {
+    "id": "b4_027",
+    "kanji": "試験",
+    "kana": "しけん",
+    "arti": "ujian",
+    "tags": [
+      "Bab 4",
+      "Akademik",
+      "Evaluasi"
+    ]
+  },
+  {
+    "id": "b4_028",
+    "kanji": "犬",
+    "kana": "いぬ",
+    "arti": "anjing",
+    "tags": [
+      "Bab 4",
+      "Hewan"
+    ]
+  },
+  {
+    "id": "b4_029",
+    "kanji": "時計",
+    "kana": "とけい",
+    "arti": "jam dinding",
+    "tags": [
+      "Bab 4",
+      "Benda",
+      "Waktu"
+    ]
+  },
+  {
+    "id": "b4_030",
+    "kanji": "鳥",
+    "kana": "とり",
+    "arti": "burung",
+    "tags": [
+      "Bab 4",
+      "Hewan"
+    ]
+  },
+  {
+    "id": "b4_031",
+    "kanji": "あります",
+    "kana": "あります",
+    "arti": "ada (benda mati)",
+    "tags": [
+      "Bab 4",
+      "Kata Kerja",
+      "Eksistensi"
+    ]
+  },
+  {
+    "id": "b4_032",
+    "kanji": "います",
+    "kana": "います",
+    "arti": "ada (benda hidup)",
+    "tags": [
+      "Bab 4",
+      "Kata Kerja",
+      "Eksistensi"
+    ]
+  },
+  {
+    "id": "b4_033",
+    "kanji": "うどん (饂飩)",
+    "kana": "うどん",
+    "arti": "udon",
+    "tags": [
+      "Bab 4",
+      "Makanan",
+      "Hidangan"
+    ]
+  },
+  {
+    "id": "b4_034",
+    "kanji": "コーヒー",
+    "kana": "コーヒー",
+    "arti": "kopi",
+    "tags": [
+      "Bab 4",
+      "Minuman"
+    ]
+  },
+  {
+    "id": "b4_035",
+    "kanji": "ラーメン",
+    "kana": "ラーメン",
+    "arti": "mie ramen",
+    "tags": [
+      "Bab 4",
+      "Makanan",
+      "Hidangan"
+    ]
+  },
+  {
+    "id": "b4_036",
+    "kanji": "アイスコーヒー",
+    "kana": "アイスコーヒー",
+    "arti": "es kopi",
+    "tags": [
+      "Bab 4",
+      "Minuman"
+    ]
+  },
+  {
+    "id": "b4_037",
+    "kanji": "カレー（ライス）",
+    "kana": "カレー（ライス）",
+    "arti": "kare",
+    "tags": [
+      "Bab 4",
+      "Makanan",
+      "Hidangan"
+    ]
+  },
+  {
+    "id": "b4_038",
+    "kanji": "ビール",
+    "kana": "ビール",
+    "arti": "bir",
+    "tags": [
+      "Bab 4",
+      "Minuman",
+      "Alkohol"
+    ]
+  },
+  {
+    "id": "b4_039",
+    "kanji": "牛丼",
+    "kana": "ぎゅうどん",
+    "arti": "gyuudon",
+    "tags": [
+      "Bab 4",
+      "Makanan",
+      "Hidangan"
+    ]
+  },
+  {
+    "id": "b4_040",
+    "kanji": "コーラ",
+    "kana": "コーラ",
+    "arti": "coca cola",
+    "tags": [
+      "Bab 4",
+      "Minuman",
+      "Merek"
+    ]
+  },
+  {
+    "id": "b4_041",
+    "kanji": "さしみ (刺身)",
+    "kana": "さしみ",
+    "arti": "sashimi",
+    "tags": [
+      "Bab 4",
+      "Makanan",
+      "Hidangan Tradisional"
+    ]
+  },
+  {
+    "id": "b4_042",
+    "kanji": "オレンジジュース",
+    "kana": "オレンジジュース",
+    "arti": "jus jeruk",
+    "tags": [
+      "Bab 4",
+      "Minuman"
+    ]
+  },
+  {
+    "id": "b4_043",
+    "kanji": "お寿司",
+    "kana": "おすし",
+    "arti": "sushi",
+    "tags": [
+      "Bab 4",
+      "Makanan",
+      "Hidangan Tradisional"
+    ]
+  },
+  {
+    "id": "b4_044",
+    "kanji": "アボカドジュース",
+    "kana": "アボカドジュース",
+    "arti": "jus alpukat",
+    "tags": [
+      "Bab 4",
+      "Minuman"
+    ]
+  },
+  {
+    "id": "b4_045",
+    "kanji": "パン",
+    "kana": "パン",
+    "arti": "roti",
+    "tags": [
+      "Bab 4",
+      "Makanan"
+    ]
+  },
+  {
+    "id": "b4_046",
+    "kanji": "トマトジュース",
+    "kana": "トマトジュース",
+    "arti": "jus tomat",
+    "tags": [
+      "Bab 4",
+      "Minuman"
+    ]
+  },
+  {
+    "id": "b4_047",
+    "kanji": "卵",
+    "kana": "たまご",
+    "arti": "telur",
+    "tags": [
+      "Bab 4",
+      "Makanan",
+      "Bahan Pokok"
+    ]
+  },
+  {
+    "id": "b4_048",
+    "kanji": "リンゴジュース",
+    "kana": "リンゴジュース",
+    "arti": "jus apel",
+    "tags": [
+      "Bab 4",
+      "Minuman"
+    ]
+  },
+  {
+    "id": "b4_049",
+    "kanji": "たまごやき (卵焼き)",
+    "kana": "たまごやき",
+    "arti": "telur dadar",
+    "tags": [
+      "Bab 4",
+      "Makanan",
+      "Hidangan"
+    ]
+  },
+  {
+    "id": "b4_050",
+    "kanji": "牛乳",
+    "kana": "ぎゅうにゅう",
+    "arti": "susu",
+    "tags": [
+      "Bab 4",
+      "Minuman",
+      "Produk Susu"
+    ]
+  },
+  {
+    "id": "b4_051",
+    "kanji": "ゆでたまご (茹で卵)",
+    "kana": "ゆでたまご",
+    "arti": "telur rebus",
+    "tags": [
+      "Bab 4",
+      "Makanan",
+      "Hidangan"
+    ]
+  },
+  {
+    "id": "b4_052",
+    "kanji": "ミルク",
+    "kana": "ミルク",
+    "arti": "susu",
+    "tags": [
+      "Bab 4",
+      "Minuman",
+      "Produk Susu"
+    ]
+  },
+  {
+    "id": "b4_053",
+    "kanji": "ハンバーガー",
+    "kana": "ハンバーガー",
+    "arti": "hamburger",
+    "tags": [
+      "Bab 4",
+      "Makanan",
+      "Hidangan"
+    ]
+  },
+  {
+    "id": "b4_054",
+    "kanji": "あめ (飴)",
+    "kana": "あめ",
+    "arti": "permen",
+    "tags": [
+      "Bab 4",
+      "Makanan",
+      "Camilan"
+    ]
+  },
+  {
+    "id": "b4_055",
+    "kanji": "〜定食",
+    "kana": "〜ていしょく",
+    "arti": "menu paket -",
+    "tags": [
+      "Bab 4",
+      "Makanan",
+      "Kategori"
+    ]
+  },
+  {
+    "id": "b4_056",
+    "kanji": "プレゼント",
+    "kana": "プレゼント",
+    "arti": "hadiah",
+    "tags": [
+      "Bab 4",
+      "Benda",
+      "Sosial"
+    ]
+  },
+  {
+    "id": "b4_057",
+    "kanji": "します",
+    "kana": "します",
+    "arti": "melakukan",
+    "tags": [
+      "Bab 4",
+      "Kata Kerja",
+      "Aktivitas Dasar"
+    ]
+  },
+  {
+    "id": "b4_058",
+    "kanji": "あげます",
+    "kana": "あげます",
+    "arti": "memberikan",
+    "tags": [
+      "Bab 4",
+      "Kata Kerja",
+      "Interaksi"
+    ]
+  },
+  {
+    "id": "b4_059",
+    "kanji": "もらいます",
+    "kana": "もらいます",
+    "arti": "menerima",
+    "tags": [
+      "Bab 4",
+      "Kata Kerja",
+      "Interaksi"
+    ]
+  },
+  {
+    "id": "b4_060",
+    "kanji": "くれます",
+    "kana": "くれます",
+    "arti": "memberikan",
+    "tags": [
+      "Bab 4",
+      "Kata Kerja",
+      "Interaksi"
+    ]
+  },
+  {
+    "id": "b4_061",
+    "kanji": "家",
+    "kana": "いえ",
+    "arti": "rumah",
+    "tags": [
+      "Bab 4",
+      "Bangunan",
+      "Tempat"
+    ]
+  },
+  {
+    "id": "b4_062",
+    "kanji": "うち (家)",
+    "kana": "うち",
+    "arti": "rumah",
+    "tags": [
+      "Bab 4",
+      "Bangunan",
+      "Tempat"
+    ]
+  },
+  {
+    "id": "b4_063",
+    "kanji": "クラス",
+    "kana": "クラス",
+    "arti": "ruang kelas",
+    "tags": [
+      "Bab 4",
+      "Ruangan",
+      "Akademik"
+    ]
+  },
+  {
+    "id": "b4_064",
+    "kanji": "教室",
+    "kana": "きょうしつ",
+    "arti": "ruang kelas",
+    "tags": [
+      "Bab 4",
+      "Ruangan",
+      "Akademik"
+    ]
+  },
+  {
+    "id": "b4_065",
+    "kanji": "事務所",
+    "kana": "じむしょ",
+    "arti": "ruang kantor",
+    "tags": [
+      "Bab 4",
+      "Ruangan",
+      "Profesional"
+    ]
+  },
+  {
+    "id": "b4_066",
+    "kanji": "受付",
+    "kana": "うけつけ",
+    "arti": "resepsionis",
+    "tags": [
+      "Bab 4",
+      "Ruangan",
+      "Fasilitas"
+    ]
+  },
+  {
+    "id": "b4_067",
+    "kanji": "会議室",
+    "kana": "かいぎしつ",
+    "arti": "ruang rapat",
+    "tags": [
+      "Bab 4",
+      "Ruangan",
+      "Profesional"
+    ]
+  },
+  {
+    "id": "b4_068",
+    "kanji": "トイレ／トイレット",
+    "kana": "トイレ／トイレット",
+    "arti": "toilet",
+    "tags": [
+      "Bab 4",
+      "Ruangan",
+      "Fasilitas"
+    ]
+  },
+  {
+    "id": "b4_069",
+    "kanji": "お手洗い",
+    "kana": "おてあらい",
+    "arti": "toilet",
+    "tags": [
+      "Bab 4",
+      "Ruangan",
+      "Fasilitas"
+    ]
+  },
+  {
+    "id": "b4_070",
+    "kanji": "倉庫",
+    "kana": "そうこ",
+    "arti": "gudang",
+    "tags": [
+      "Bab 4",
+      "Ruangan",
+      "Fasilitas"
+    ]
+  },
+  {
+    "id": "b4_071",
+    "kanji": "工場",
+    "kana": "こうじょう",
+    "arti": "pabrik",
+    "tags": [
+      "Bab 4",
+      "Bangunan",
+      "Industri"
+    ]
+  },
+  {
+    "id": "b4_072",
+    "kanji": "げんかん (玄関)",
+    "kana": "げんかん",
+    "arti": "teras rumah",
+    "tags": [
+      "Bab 4",
+      "Ruangan",
+      "Rumah"
+    ]
+  },
+  {
+    "id": "b4_073",
+    "kanji": "居間",
+    "kana": "いま",
+    "arti": "ruang keluarga",
+    "tags": [
+      "Bab 4",
+      "Ruangan",
+      "Rumah"
+    ]
+  },
+  {
+    "id": "b4_074",
+    "kanji": "リビング",
+    "kana": "リビング",
+    "arti": "ruang keluarga",
+    "tags": [
+      "Bab 4",
+      "Ruangan",
+      "Rumah"
+    ]
+  },
+  {
+    "id": "b4_075",
+    "kanji": "台所",
+    "kana": "だいどころ",
+    "arti": "dapur",
+    "tags": [
+      "Bab 4",
+      "Ruangan",
+      "Rumah"
+    ]
+  },
+  {
+    "id": "b4_076",
+    "kanji": "キッチン",
+    "kana": "キッチン",
+    "arti": "dapur",
+    "tags": [
+      "Bab 4",
+      "Ruangan",
+      "Rumah"
+    ]
+  },
+  {
+    "id": "b4_077",
+    "kanji": "部屋",
+    "kana": "へや",
+    "arti": "kamar",
+    "tags": [
+      "Bab 4",
+      "Ruangan",
+      "Rumah"
+    ]
+  },
+  {
+    "id": "b4_078",
+    "kanji": "北",
+    "kana": "きた",
+    "arti": "utara",
+    "tags": [
+      "Bab 4",
+      "Arah",
+      "Geografi"
+    ]
+  },
+  {
+    "id": "b4_079",
+    "kanji": "南",
+    "kana": "みなみ",
+    "arti": "selatan",
+    "tags": [
+      "Bab 4",
+      "Arah",
+      "Geografi"
+    ]
+  },
+  {
+    "id": "b4_080",
+    "kanji": "西",
+    "kana": "にし",
+    "arti": "barat",
+    "tags": [
+      "Bab 4",
+      "Arah",
+      "Geografi"
+    ]
+  },
+  {
+    "id": "b4_081",
+    "kanji": "東",
+    "kana": "ひがし",
+    "arti": "timur",
+    "tags": [
+      "Bab 4",
+      "Arah",
+      "Geografi"
+    ]
+  },
+  {
+    "id": "b4_082",
+    "kanji": "駐車場",
+    "kana": "ちゅうしゃじょう",
+    "arti": "parkir mobil",
+    "tags": [
+      "Bab 4",
+      "Fasilitas",
+      "Transportasi"
+    ]
+  },
+  {
+    "id": "b4_083",
+    "kanji": "駐輪場",
+    "kana": "ちゅうりんじょう",
+    "arti": "parkir sepeda",
+    "tags": [
+      "Bab 4",
+      "Fasilitas",
+      "Transportasi"
+    ]
+  },
+  {
+    "id": "b4_084",
+    "kanji": "本棚",
+    "kana": "ほんだな",
+    "arti": "lemari buku",
+    "tags": [
+      "Bab 4",
+      "Perabotan"
+    ]
+  },
+  {
+    "id": "b4_085",
+    "kanji": "たな (棚)",
+    "kana": "たな",
+    "arti": "lemari",
+    "tags": [
+      "Bab 4",
+      "Perabotan"
+    ]
+  },
+  {
+    "id": "b4_086",
+    "kanji": "せんぷうき (扇風機)",
+    "kana": "せんぷうき",
+    "arti": "kipas angin",
+    "tags": [
+      "Bab 4",
+      "Perabotan",
+      "Elektronik"
+    ]
+  },
+  {
+    "id": "b4_087",
+    "kanji": "コピー機",
+    "kana": "コピーき",
+    "arti": "mesin fotokopi",
+    "tags": [
+      "Bab 4",
+      "Alat Kantor",
+      "Elektronik"
+    ]
+  },
+  {
+    "id": "b4_088",
+    "kanji": "ファックス",
+    "kana": "ファックス",
+    "arti": "mesin FAX",
+    "tags": [
+      "Bab 4",
+      "Alat Kantor",
+      "Elektronik"
+    ]
+  },
+  {
+    "id": "b4_089",
+    "kanji": "電話",
+    "kana": "でんわ",
+    "arti": "telepon",
+    "tags": [
+      "Bab 4",
+      "Alat Kantor",
+      "Elektronik"
+    ]
+  },
+  {
+    "id": "b4_090",
+    "kanji": "ホチキス",
+    "kana": "ホチキス",
+    "arti": "stapler",
+    "tags": [
+      "Bab 4",
+      "Alat Kantor"
+    ]
+  },
+  {
+    "id": "b4_091",
+    "kanji": "はさみ (鋏)",
+    "kana": "はさみ",
+    "arti": "gunting",
+    "tags": [
+      "Bab 4",
+      "Alat Kantor",
+      "Perkakas"
+    ]
+  },
+  {
+    "id": "b4_092",
+    "kanji": "ドライバー",
+    "kana": "ドライバー",
+    "arti": "obeng",
+    "tags": [
+      "Bab 4",
+      "Perkakas"
+    ]
+  },
+  {
+    "id": "b4_093",
+    "kanji": "スパナ",
+    "kana": "スパナ",
+    "arti": "kuncing pas",
+    "tags": [
+      "Bab 4",
+      "Perkakas"
+    ]
+  },
+  {
+    "id": "b4_094",
+    "kanji": "ペンチ",
+    "kana": "ペンチ",
+    "arti": "tang",
+    "tags": [
+      "Bab 4",
+      "Perkakas"
+    ]
+  },
+  {
+    "id": "b4_095",
+    "kanji": "箱",
+    "kana": "はこ",
+    "arti": "kotak",
+    "tags": [
+      "Bab 4",
+      "Benda"
+    ]
+  },
+  {
+    "id": "b4_096",
+    "kanji": "ゴミ",
+    "kana": "ゴミ",
+    "arti": "sampah",
+    "tags": [
+      "Bab 4",
+      "Benda"
+    ]
+  },
+  {
+    "id": "b4_097",
+    "kanji": "ゴミ箱",
+    "kana": "ごみばこ",
+    "arti": "tempat sampah",
+    "tags": [
+      "Bab 4",
+      "Perabotan"
+    ]
+  },
+  {
+    "id": "b4_098",
+    "kanji": "袋",
+    "kana": "ふくろ",
+    "arti": "kantong",
+    "tags": [
+      "Bab 4",
+      "Benda"
+    ]
+  },
+  {
+    "id": "b4_099",
+    "kanji": "手袋",
+    "kana": "てぶくろ",
+    "arti": "sarung tangan",
+    "tags": [
+      "Bab 4",
+      "Pakaian",
+      "Aksesoris"
+    ]
+  },
+  {
+    "id": "b4_100",
+    "kanji": "荷物",
+    "kana": "にもつ",
+    "arti": "barang bawaan",
+    "tags": [
+      "Bab 4",
+      "Benda"
+    ]
+  },
+  {
+    "id": "b4_101",
+    "kanji": "かご (籠)",
+    "kana": "かご",
+    "arti": "keranjang",
+    "tags": [
+      "Bab 4",
+      "Benda"
+    ]
+  },
+  {
+    "id": "b4_102",
+    "kanji": "日記",
+    "kana": "にっき",
+    "arti": "catatan harian",
+    "tags": [
+      "Bab 4",
+      "Media"
+    ]
+  },
+  {
+    "id": "b4_103",
+    "kanji": "ねんがじょう (年賀状)",
+    "kana": "ねんがじょう",
+    "arti": "ucapan tahun baru",
+    "tags": [
+      "Bab 4",
+      "Media",
+      "Sosial"
+    ]
+  },
+  {
+    "id": "b4_104",
+    "kanji": "はし (橋)",
+    "kana": "はし",
+    "arti": "jembatan",
+    "tags": [
+      "Bab 4",
+      "Infrastruktur"
+    ]
+  },
+  {
+    "id": "b4_105",
+    "kanji": "はがき (葉書)",
+    "kana": "はがき",
+    "arti": "kartu pos",
+    "tags": [
+      "Bab 4",
+      "Media"
+    ]
+  },
+  {
+    "id": "b4_106",
+    "kanji": "枕",
+    "kana": "まくら",
+    "arti": "bantal",
+    "tags": [
+      "Bab 4",
+      "Perabotan",
+      "Tidur"
+    ]
+  },
+  {
+    "id": "b4_107",
+    "kanji": "一",
+    "kana": "いち",
+    "arti": "1",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Angka Dasar"
+    ]
+  },
+  {
+    "id": "b4_108",
+    "kanji": "二",
+    "kana": "に",
+    "arti": "2",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Angka Dasar"
+    ]
+  },
+  {
+    "id": "b4_109",
+    "kanji": "三",
+    "kana": "さん",
+    "arti": "3",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Angka Dasar"
+    ]
+  },
+  {
+    "id": "b4_110",
+    "kanji": "四",
+    "kana": "よん／し",
+    "arti": "4",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Angka Dasar"
+    ]
+  },
+  {
+    "id": "b4_111",
+    "kanji": "五",
+    "kana": "ご",
+    "arti": "5",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Angka Dasar"
+    ]
+  },
+  {
+    "id": "b4_112",
+    "kanji": "六",
+    "kana": "ろく",
+    "arti": "6",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Angka Dasar"
+    ]
+  },
+  {
+    "id": "b4_113",
+    "kanji": "七",
+    "kana": "なな／しち",
+    "arti": "7",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Angka Dasar"
+    ]
+  },
+  {
+    "id": "b4_114",
+    "kanji": "八",
+    "kana": "はち",
+    "arti": "8",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Angka Dasar"
+    ]
+  },
+  {
+    "id": "b4_115",
+    "kanji": "九",
+    "kana": "きゅう／く",
+    "arti": "9",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Angka Dasar"
+    ]
+  },
+  {
+    "id": "b4_116",
+    "kanji": "十",
+    "kana": "じゅう",
+    "arti": "10",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Angka Dasar"
+    ]
+  },
+  {
+    "id": "b4_117",
+    "kanji": "十一",
+    "kana": "じゅういち",
+    "arti": "11",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Belasan"
+    ]
+  },
+  {
+    "id": "b4_118",
+    "kanji": "十二",
+    "kana": "じゅうに",
+    "arti": "12",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Belasan"
+    ]
+  },
+  {
+    "id": "b4_119",
+    "kanji": "十三",
+    "kana": "じゅうさん",
+    "arti": "13",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Belasan"
+    ]
+  },
+  {
+    "id": "b4_120",
+    "kanji": "十四",
+    "kana": "じゅうよん",
+    "arti": "14",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Belasan"
+    ]
+  },
+  {
+    "id": "b4_121",
+    "kanji": "十五",
+    "kana": "じゅうご",
+    "arti": "15",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Belasan"
+    ]
+  },
+  {
+    "id": "b4_122",
+    "kanji": "二十",
+    "kana": "にじゅう",
+    "arti": "20",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Puluhan"
+    ]
+  },
+  {
+    "id": "b4_123",
+    "kanji": "三十",
+    "kana": "さんじゅう",
+    "arti": "30",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Puluhan"
+    ]
+  },
+  {
+    "id": "b4_124",
+    "kanji": "四十",
+    "kana": "よんじゅう",
+    "arti": "40",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Puluhan"
+    ]
+  },
+  {
+    "id": "b4_125",
+    "kanji": "八十",
+    "kana": "はちじゅう",
+    "arti": "80",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Puluhan"
+    ]
+  },
+  {
+    "id": "b4_126",
+    "kanji": "九十九",
+    "kana": "きゅうじゅうきゅう",
+    "arti": "99",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Puluhan"
+    ]
+  },
+  {
+    "id": "b4_127",
+    "kanji": "百",
+    "kana": "ひゃく",
+    "arti": "100",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ratusan"
+    ]
+  },
+  {
+    "id": "b4_128",
+    "kanji": "二百",
+    "kana": "にひゃく",
+    "arti": "200",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ratusan"
+    ]
+  },
+  {
+    "id": "b4_129",
+    "kanji": "三百",
+    "kana": "さんびゃく",
+    "arti": "300",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ratusan"
+    ]
+  },
+  {
+    "id": "b4_130",
+    "kanji": "四百",
+    "kana": "よんひゃく",
+    "arti": "400",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ratusan"
+    ]
+  },
+  {
+    "id": "b4_131",
+    "kanji": "五百",
+    "kana": "ごひゃく",
+    "arti": "500",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ratusan"
+    ]
+  },
+  {
+    "id": "b4_132",
+    "kanji": "六百",
+    "kana": "ろっぴゃく",
+    "arti": "600",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ratusan"
+    ]
+  },
+  {
+    "id": "b4_133",
+    "kanji": "七百",
+    "kana": "ななひゃく",
+    "arti": "700",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ratusan"
+    ]
+  },
+  {
+    "id": "b4_134",
+    "kanji": "八百",
+    "kana": "はっぴゃく",
+    "arti": "800",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ratusan"
+    ]
+  },
+  {
+    "id": "b4_135",
+    "kanji": "九百",
+    "kana": "きゅうひゃく",
+    "arti": "900",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ratusan"
+    ]
+  },
+  {
+    "id": "b4_136",
+    "kanji": "千",
+    "kana": "せん",
+    "arti": "1000",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ribuan"
+    ]
+  },
+  {
+    "id": "b4_137",
+    "kanji": "二千",
+    "kana": "にせん",
+    "arti": "2000",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ribuan"
+    ]
+  },
+  {
+    "id": "b4_138",
+    "kanji": "三千",
+    "kana": "さんぜん",
+    "arti": "3000",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ribuan"
+    ]
+  },
+  {
+    "id": "b4_139",
+    "kanji": "四千",
+    "kana": "よんせん",
+    "arti": "4000",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ribuan"
+    ]
+  },
+  {
+    "id": "b4_140",
+    "kanji": "五千",
+    "kana": "ごせん",
+    "arti": "5000",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ribuan"
+    ]
+  },
+  {
+    "id": "b4_141",
+    "kanji": "六千",
+    "kana": "ろくせん",
+    "arti": "6000",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ribuan"
+    ]
+  },
+  {
+    "id": "b4_142",
+    "kanji": "七千",
+    "kana": "ななせん",
+    "arti": "7000",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ribuan"
+    ]
+  },
+  {
+    "id": "b4_143",
+    "kanji": "八千",
+    "kana": "はっせん",
+    "arti": "8000",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ribuan"
+    ]
+  },
+  {
+    "id": "b4_144",
+    "kanji": "九千",
+    "kana": "きゅうせん",
+    "arti": "9000",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ribuan"
+    ]
+  },
+  {
+    "id": "b4_145",
+    "kanji": "一万",
+    "kana": "いちまん",
+    "arti": "10000",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Puluhan Ribu"
+    ]
+  },
+  {
+    "id": "b4_146",
+    "kanji": "万",
+    "kana": "まん",
+    "arti": "10000",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Puluhan Ribu"
+    ]
+  },
+  {
+    "id": "b4_147",
+    "kanji": "億",
+    "kana": "おく",
+    "arti": "100000000",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Ratusan Juta"
+    ]
+  },
+  {
+    "id": "b4_148",
+    "kanji": "2.5 (二点五)",
+    "kana": "にてんご",
+    "arti": "2.5",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Desimal"
+    ]
+  },
+  {
+    "id": "b4_149",
+    "kanji": "2/3 (三分の二)",
+    "kana": "さんぶんのに",
+    "arti": "2/3",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Pecahan"
+    ]
+  },
+  {
+    "id": "b4_150",
+    "kanji": "一つ",
+    "kana": "ひとつ",
+    "arti": "1 buah",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Buah"
+    ]
+  },
+  {
+    "id": "b4_151",
+    "kanji": "二つ",
+    "kana": "ふたつ",
+    "arti": "2 buah",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Buah"
+    ]
+  },
+  {
+    "id": "b4_152",
+    "kanji": "三つ",
+    "kana": "みっつ",
+    "arti": "3 buah",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Buah"
+    ]
+  },
+  {
+    "id": "b4_153",
+    "kanji": "四つ",
+    "kana": "よっつ",
+    "arti": "4 buah",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Buah"
+    ]
+  },
+  {
+    "id": "b4_154",
+    "kanji": "五つ",
+    "kana": "いつつ",
+    "arti": "5 buah",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Buah"
+    ]
+  },
+  {
+    "id": "b4_155",
+    "kanji": "六つ",
+    "kana": "むっつ",
+    "arti": "6 buah",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Buah"
+    ]
+  },
+  {
+    "id": "b4_156",
+    "kanji": "七つ",
+    "kana": "ななつ",
+    "arti": "7 buah",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Buah"
+    ]
+  },
+  {
+    "id": "b4_157",
+    "kanji": "八つ",
+    "kana": "やっつ",
+    "arti": "8 buah",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Buah"
+    ]
+  },
+  {
+    "id": "b4_158",
+    "kanji": "九つ",
+    "kana": "ここのつ",
+    "arti": "9 buah",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Buah"
+    ]
+  },
+  {
+    "id": "b4_159",
+    "kanji": "十",
+    "kana": "とお",
+    "arti": "10 buah",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Buah"
+    ]
+  },
+  {
+    "id": "b4_160",
+    "kanji": "幾つ？",
+    "kana": "いくつ？",
+    "arti": "berapa buah?",
+    "tags": [
+      "Bab 4",
+      "Kata Tanya",
+      "Satuan Buah"
+    ]
+  },
+  {
+    "id": "b4_161",
+    "kanji": "一階",
+    "kana": "いっかい",
+    "arti": "lantai 1",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Lantai"
+    ]
+  },
+  {
+    "id": "b4_162",
+    "kanji": "二階",
+    "kana": "にかい",
+    "arti": "lantai 2",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Lantai"
+    ]
+  },
+  {
+    "id": "b4_163",
+    "kanji": "三階",
+    "kana": "さんがい",
+    "arti": "lantai 3",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Lantai"
+    ]
+  },
+  {
+    "id": "b4_164",
+    "kanji": "四階",
+    "kana": "よんかい",
+    "arti": "lantai 4",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Lantai"
+    ]
+  },
+  {
+    "id": "b4_165",
+    "kanji": "五階",
+    "kana": "ごかい",
+    "arti": "lantai 5",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Lantai"
+    ]
+  },
+  {
+    "id": "b4_166",
+    "kanji": "六階",
+    "kana": "ろっかい",
+    "arti": "lantai 6",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Lantai"
+    ]
+  },
+  {
+    "id": "b4_167",
+    "kanji": "七階",
+    "kana": "ななかい",
+    "arti": "lantai 7",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Lantai"
+    ]
+  },
+  {
+    "id": "b4_168",
+    "kanji": "八階",
+    "kana": "はっかい",
+    "arti": "lantai 8",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Lantai"
+    ]
+  },
+  {
+    "id": "b4_169",
+    "kanji": "九階",
+    "kana": "きゅうかい",
+    "arti": "lantai 9",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Lantai"
+    ]
+  },
+  {
+    "id": "b4_170",
+    "kanji": "十階",
+    "kana": "じゅっかい／じっかい",
+    "arti": "lantai 10",
+    "tags": [
+      "Bab 4",
+      "Numerik",
+      "Satuan Lantai"
+    ]
+  },
+  {
+    "id": "b4_171",
+    "kanji": "何階？",
+    "kana": "なんがい？",
+    "arti": "lantai berapa?",
+    "tags": [
+      "Bab 4",
+      "Kata Tanya",
+      "Satuan Lantai"
+    ]
+  }
+]
