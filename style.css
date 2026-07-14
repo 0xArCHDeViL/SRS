@@ -1,4 +1,208 @@
-/* ==============================================================Qubit SRS - Mobile Core & Anti-Jank Reflow============================================================== *//* STREAMING_CHUNK:Base Resets for Mobile */{-webkit-tap-highlight-color: transparent;touch-action: manipulation; /* Prevents double-tap zoom delay */}/* Fix iOS Safari 100dvh rendering issue */@supports (-webkit-touch-callout: none) {body {min-height: -webkit-fill-available;}}/* Prevent overscroll bounce (Rubber banding) */.overscroll-y-none {overscroll-behavior-y: none;}/* STREAMING_CHUNK:UI Settings Button Toggles */.setting-btn {@apply py-2.5 rounded-md text-sm font-medium transition-colors duration-150 text-muted-foreground flex-1 flex justify-center items-center;}.setting-btn.active {@apply bg-card text-foreground shadow-sm ring-1 ring-border;}/* Form Customization */.custom-select {-webkit-appearance: none;-moz-appearance: none;appearance: none;background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23a1a1aa' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat: no-repeat;background-position: right 1rem center;background-size: 1rem;}/* STREAMING_CHUNK:Hardware Accelerated Flashcard */.perspective-1000 {perspective: 1000px;}.transform-style-3d {transform-style: preserve-3d;}.backface-hidden {backface-visibility: hidden;-webkit-backface-visibility: hidden;}.rotate-y-180 {transform: rotateY(180deg);}/* The FLIP Action - Using pure transform avoids reflows */.will-change-transform {will-change: transform;}#fc-inner {transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);}#fc-area.is-flipped #fc-inner {transform: rotateY(180deg);}/* STREAMING_CHUNK:Grading Buttons and Micro Interactions */.grade-btn {@apply flex flex-col items-center justify-center py-3 rounded-xl border transition-colors duration-150 outline-none;}/* Quiz Option States /
+/* ==============================================================
+   Qubit SRS — Mobile Core & Anti-Jank Reflow
+   ============================================================== */
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+@supports (-webkit-touch-callout: none) {
+    body { min-height: -webkit-fill-available; }
+}
+
+.overscroll-y-none { overscroll-behavior-y: none; }
+
+/* ---------- Adaptive text scaling ---------- */
+/* Some cards carry long compound strings (e.g. "トイレットペーパー", katakana loanwords,
+   or arti with inline notes like "Amerika (Ditulis 'アメリア' di modul)"). Font-size steps
+   down via a data-length-driven class set from script.js rather than a fixed huge size
+   that would clip on a phone screen. */
+#fc-q, #qz-q {
+    line-height: 1.15;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    hyphens: none;
+}
+#fc-q.text-len-md, #qz-q.text-len-md { font-size: clamp(2rem, 9vw, 3.5rem) !important; }
+#fc-q.text-len-lg, #qz-q.text-len-lg { font-size: clamp(1.5rem, 7vw, 2.5rem) !important; }
+#fc-q.text-len-xl, #qz-q.text-len-xl { font-size: clamp(1.25rem, 5.5vw, 2rem) !important; }
+
+#fc-a.text-len-lg { font-size: 1.05rem !important; }
+#fc-a.text-len-xl { font-size: 0.95rem !important; }
+
+.quiz-opt.text-len-lg { font-size: 0.95rem !important; }
+.quiz-opt.text-len-xl { font-size: 0.85rem !important; }
+
+/* ---------- Settings toggles ---------- */
+.setting-btn {
+    @apply py-2.5 rounded-md text-sm font-medium transition-colors duration-150 text-muted-foreground flex-1 flex justify-center items-center;
+}
+.setting-btn.active {
+    @apply bg-card text-foreground shadow-sm ring-1 ring-border;
+}
+
+/* ---------- Engine mode toggle (SRS vs Latihan) ---------- */
+.engine-btn {
+    @apply flex-1 flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-muted-foreground transition-all duration-150;
+}
+.engine-btn.active {
+    @apply bg-accent/10 text-accent ring-1 ring-accent/30;
+}
+.engine-btn:not(.active):hover {
+    @apply bg-muted text-foreground;
+}
+
+/* ---------- Group/category filter chips ---------- */
+.group-chip {
+    @apply text-xs font-bold px-3 py-1.5 rounded-full border border-border bg-card text-muted-foreground transition-all duration-150;
+}
+.group-chip.active {
+    @apply bg-accent/10 border-accent/40 text-accent;
+}
+.group-chip:active {
+    transform: scale(0.95);
+}
+
+/* ---------- Select ---------- */
+.custom-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238f8f98' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1rem;
+}
+
+/* ---------- Deck selection glow ---------- */
+.shadow-glow {
+    box-shadow: 0 0 0 1px rgba(200, 255, 61, 0.25), 0 4px 20px -4px rgba(200, 255, 61, 0.15);
+}
+
+/* ---------- Flashcard 3D flip ---------- */
+.perspective-1000 { perspective: 1000px; }
+.transform-style-3d { transform-style: preserve-3d; }
+.backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.rotate-y-180 { transform: rotateY(180deg); }
+.will-change-transform { will-change: transform; }
+
+#fc-inner {
+    transition: transform 0.42s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#fc-area.is-flipped #fc-inner {
+    transform: rotateY(180deg);
+}
+#fc-area {
+    cursor: pointer;
+}
+#fc-area:active #fc-inner:not(.is-flipped) {
+    transform: scale(0.985);
+}
+
+/* ---------- Progress bar ---------- */
+.progress-fill {
+    width: 0%;
+    transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---------- Grading buttons ---------- */
+.grade-btn {
+    @apply flex flex-col items-center justify-center py-3 rounded-xl border transition-colors duration-150 outline-none;
+}
+
+/* ---------- Quiz options ---------- */
 .quiz-opt {
-@apply w-full bg-card border-2 border-border p-4 rounded-xl text-lg font-medium text-foreground transition-all duration-150 text-center outline-none flex items-center justify-center font-jp min-h-[72px];
-/ Using transform scale for tap effect to prevent layout shift */}.quiz-opt:active {transform: scale(0.96);}.quiz-opt.opt-correct {@apply border-success bg-success/10 text-success z-10;}.quiz-opt.opt-wrong {@apply border-destructive bg-destructive/10 text-destructive opacity-50;}.quiz-opt.opt-disabled {@apply pointer-events-none;}/* STREAMING_CHUNK:Smooth Fade In Animations */@keyframes fadeIn {from { opacity: 0; }to { opacity: 1; }}.animate-in {animation: fadeIn 0.2s ease-out forwards;}.btn-press {transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s, border-color 0.2s;will-change: transform;}.btn-press:active {transform: scale(0.95);}
+    @apply w-full bg-card border-2 border-border p-4 rounded-xl text-lg font-medium text-foreground transition-all duration-150 text-center outline-none flex items-center justify-center font-jp min-h-[72px];
+    animation: optIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+@keyframes optIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.quiz-opt:active { transform: scale(0.96); }
+.quiz-opt.opt-correct {
+    @apply border-success bg-success/10 text-success z-10;
+    animation: pulseCorrect 0.4s ease-out;
+}
+.quiz-opt.opt-wrong {
+    @apply border-destructive bg-destructive/10 text-destructive opacity-50;
+    animation: shakeWrong 0.3s ease-out;
+}
+.quiz-opt.opt-disabled { pointer-events: none; }
+
+@keyframes pulseCorrect {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.04); }
+    100% { transform: scale(1); }
+}
+@keyframes shakeWrong {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+}
+
+/* ---------- Stat pills (session complete) ---------- */
+.stat-pill {
+    @apply flex flex-col items-center gap-0.5 bg-card border border-border rounded-xl px-4 py-3 min-w-[72px];
+}
+.stat-pill .stat-num {
+    @apply text-xl font-black font-mono;
+}
+.stat-pill span:last-child {
+    @apply text-[10px] text-muted-foreground uppercase tracking-wider font-bold;
+}
+
+/* ---------- Toast ---------- */
+.toast {
+    position: fixed;
+    left: 50%;
+    bottom: 24px;
+    transform: translate(-50%, 12px);
+    background: #141417;
+    border: 1px solid;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 100;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.toast.show {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+/* ---------- Generic animations ---------- */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.animate-in { animation: fadeIn 0.2s ease-out forwards; }
+
+.btn-press {
+    transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s, border-color 0.2s;
+    will-change: transform;
+}
+.btn-press:active { transform: scale(0.95); }
+
+/* ---------- Focus visibility (keyboard nav) ---------- */
+button:focus-visible,
+.deck-btn:focus-visible {
+    outline: 2px solid #c8ff3d;
+    outline-offset: 2px;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        transition-duration: 0.001ms !important;
+    }
+}
