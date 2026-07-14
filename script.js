@@ -484,12 +484,27 @@ const app = {
     },
 
     switchView: function (v) {
-        ['dashboard', 'flashcard', 'quiz', 'complete'].forEach(id => {
-            DOM[`view_${id}`].classList.add('hidden');
-            DOM[`view_${id}`].classList.remove('flex');
-        });
-        DOM[`view_${v}`].classList.remove('hidden');
-        if (v !== 'dashboard') DOM[`view_${v}`].classList.add('flex');
+        const views = ['dashboard', 'flashcard', 'quiz', 'complete'];
+        const current = views.find(id => !DOM[`view_${id}`].classList.contains('hidden'));
+
+        const finishSwitch = () => {
+            views.forEach(id => {
+                DOM[`view_${id}`].classList.add('hidden');
+                DOM[`view_${id}`].classList.remove('flex', 'view-exit');
+            });
+            DOM[`view_${v}`].classList.remove('hidden');
+            if (v !== 'dashboard') DOM[`view_${v}`].classList.add('flex');
+        };
+
+        // Play a brief exit animation on the outgoing view instead of an instant cut —
+        // this was the main source of "jank" reported between flashcard/quiz transitions.
+        if (current && current !== v) {
+            const outgoing = DOM[`view_${current}`];
+            outgoing.classList.add('view-exit');
+            setTimeout(finishSwitch, 130);
+        } else {
+            finishSwitch();
+        }
     },
 
     goHome: function () {
@@ -707,8 +722,8 @@ const app = {
             b.className = 'quiz-opt';
             b.style.animationDelay = `${i * 30}ms`;
             const optText = isRev ? parseKanjiField(o.kanji).primary : o.arti;
-            b.textContent = optText;
             b.dataset.id = o.id;
+            b.innerHTML = `<span class="opt-num">${i + 1}</span><span class="opt-label">${optText}</span>`;
             fitText(b, optText, { md: 14, lg: 22, xl: 30 });
             frag.appendChild(b);
         });
