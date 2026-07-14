@@ -79,6 +79,7 @@ function cacheDOM() {
     DOM.deckGrid = document.getElementById('deck-grid');
     DOM.groupGrid = document.getElementById('group-grid');
     DOM.groupSection = document.getElementById('group-section');
+    DOM.btnClearTags = document.getElementById('btn-clear-tags');
     DOM.navDue = document.getElementById('nav-due-count');
     DOM.navMode = document.getElementById('nav-mode-indicator');
     DOM.limitSelect = document.getElementById('setting-limit');
@@ -318,6 +319,13 @@ const app = {
             e.currentTarget.textContent = allSelected ? 'Pilih Semua' : 'Batal Semua';
         });
 
+        if (DOM.btnClearTags) {
+            DOM.btnClearTags.addEventListener('click', () => {
+                state.groups.clear();
+                this.refreshGroupOptions();
+            });
+        }
+
         document.getElementById('btn-wipe').addEventListener('click', () => this.confirmWipe());
         document.getElementById('btn-start').addEventListener('click', () => this.start());
         DOM.btnRepeatSession.addEventListener('click', () => this.start());
@@ -415,29 +423,38 @@ const app = {
         DOM.deckGrid.appendChild(frag);
         lucide.createIcons();
 
-        DATABASES.forEach(async (db) => {
-            try {
-                const res = await fetch(db.path);
-                const arr = await res.json();
+        // Load all data to memory first so we can extract global tags
+        const fetches = DATABASES.map(db =>
+            fetch(db.path).then(res => res.json()).then(arr => {
                 state.deckCards[db.id] = arr;
+                return { id: db.id, arr };
+            })
+        );
+
+        try {
+            const results = await Promise.all(fetches);
+            results.forEach(({ id, arr }) => {
                 const due = Storage.getDueForCards(arr.map(c => c.id));
-                const labelEl = document.querySelector(`.deck-btn[data-id="${db.id}"] .deck-label`);
-                const dueEl = document.querySelector(`.deck-btn[data-id="${db.id}"] .deck-due`);
-                if (labelEl) labelEl.textContent = deriveDeckLabel(arr, db.id);
+                const labelEl = document.querySelector(`.deck-btn[data-id="${id}"] .deck-label`);
+                const dueEl = document.querySelector(`.deck-btn[data-id="${id}"] .deck-due`);
+                if (labelEl) labelEl.textContent = deriveDeckLabel(arr, id);
                 if (dueEl) dueEl.textContent = `${arr.length} kartu · ${due} due`;
-            } catch (e) {
-                const el = document.querySelector(`.deck-btn[data-id="${db.id}"] .deck-due`);
-                if (el) el.textContent = 'gagal muat';
-            }
-        });
+            });
+
+            // Once all data is loaded, render the global tags
+            this.refreshGroupOptions();
+        } catch (e) {
+            console.error(e);
+            this.toast('Gagal memuat data JSON.', 'error');
+        }
     },
 
-    // Group filter chips are real non-"Bab N" tags pulled straight from the selected decks —
-    // Profesi, Negara, Kazoku-Inner, Numerik, etc. — not a separate category field that
-    // doesn't exist in this dataset.
+    // Guided Study Tags: Pulls from ALL decks or only SELECTED decks
     refreshGroupOptions: function () {
         const tagCount = {};
-        state.decks.forEach(id => {
+        const sourceDecks = state.decks.size > 0 ? Array.from(state.decks) : DATABASES.map(d => d.id);
+
+        sourceDecks.forEach(id => {
             (state.deckCards[id] || []).forEach(c => {
                 (c.tags || []).forEach(t => {
                     if (t.toLowerCase().startsWith('bab')) return;
@@ -448,20 +465,16 @@ const app = {
 
         const tags = Object.keys(tagCount);
         if (tags.length === 0) {
-            DOM.groupSection.classList.add('hidden');
-            state.groups.clear();
+            DOM.groupGrid.innerHTML = '<p class="text-xs text-muted-foreground">Tidak ada tag di modul ini.</p>';
             return;
         }
 
-        // Prune selections that no longer apply to the newly-selected deck set
+        // Prune selections that no longer apply
         state.groups.forEach(g => { if (!tagCount[g]) state.groups.delete(g); });
 
-        DOM.groupSection.classList.remove('hidden');
         DOM.groupGrid.innerHTML = '';
         const frag = document.createDocumentFragment();
 
-        // Sort by frequency descending so the most useful groups (Kata Kerja, Profesi, Negara...)
-        // surface first instead of being buried alphabetically.
         tags.sort((a, b) => tagCount[b] - tagCount[a]);
 
         tags.forEach(tag => {
@@ -471,12 +484,28 @@ const app = {
             chip.innerHTML = `${tag} <span class="opacity-50 font-mono">${tagCount[tag]}</span>`;
             chip.dataset.tag = tag;
             chip.addEventListener('click', () => {
-                if (state.groups.has(tag)) { state.groups.delete(tag); chip.classList.remove('active'); }
-                else { state.groups.add(tag); chip.classList.add('active'); }
+                if (state.groups.has(tag)) {
+                    state.groups.delete(tag);
+                    chip.classList.remove('active');
+                } else {
+                    state.groups.add(tag);
+                    chip.classList.add('active');
+                }
+                const btnClear = document.getElementById('btn-clear-tags');
+                if (btnClear) {
+                    if (state.groups.size > 0) btnClear.classList.remove('hidden');
+                    else btnClear.classList.add('hidden');
+                }
             });
             frag.appendChild(chip);
         });
         DOM.groupGrid.appendChild(frag);
+
+        const btnClear = document.getElementById('btn-clear-tags');
+        if (btnClear) {
+            if (state.groups.size > 0) btnClear.classList.remove('hidden');
+            else btnClear.classList.add('hidden');
+        }
     },
 
     updateBadge: function () {
@@ -529,13 +558,19 @@ const app = {
     },
 
     start: async function () {
-        if (state.decks.size === 0) return this.toast("Pilih minimal 1 pangkalan data.", 'warn');
+        if (state.decks.size === 0 && state.groups.size === 0) {
+            return this.toast("Pilih minimal 1 modul bab atau 1 topik studi.", 'warn');
+        }
 
         try {
             state.pool = [];
-            const fetches = Array.from(state.decks).map(id => fetch(DATABASES.find(d => d.id === id).path).then(r => r.json()));
-            const dataArrays = await Promise.all(fetches);
-            dataArrays.forEach(arr => state.pool.push(...arr));
+            const activeDecks = state.decks.size > 0 ? Array.from(state.decks) : DATABASES.map(d => d.id);
+
+            for (const id of activeDecks) {
+                if (state.deckCards[id]) {
+                    state.pool.push(...state.deckCards[id]);
+                }
+            }
 
             if (state.groups.size > 0) {
                 state.pool = state.pool.filter(c => (c.tags || []).some(t => state.groups.has(t)));
