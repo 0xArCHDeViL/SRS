@@ -174,8 +174,10 @@ export function bindEvents(){
   });
 
   document.getElementById('flashcard').addEventListener('click', flipCard);
-  document.getElementById('btnYes').addEventListener('click', (e)=>{ e.stopPropagation(); answerFlashcard(true); });
-  document.getElementById('btnNo').addEventListener('click', (e)=>{ e.stopPropagation(); answerFlashcard(false); });
+  document.getElementById('btnAgain').addEventListener('click', (e)=>{ e.stopPropagation(); answerFlashcard(1); });
+  document.getElementById('btnHard').addEventListener('click', (e)=>{ e.stopPropagation(); answerFlashcard(2); });
+  document.getElementById('btnGood').addEventListener('click', (e)=>{ e.stopPropagation(); answerFlashcard(3); });
+  document.getElementById('btnEasy').addEventListener('click', (e)=>{ e.stopPropagation(); answerFlashcard(4); });
   document.getElementById('studyUndo').addEventListener('click', (e)=>{ e.stopPropagation(); undoLastAnswer(); });
   document.getElementById('studyExit').addEventListener('click', ()=> confirmExitSession());
   document.getElementById('quizExit').addEventListener('click', ()=> confirmExitSession());
@@ -210,8 +212,10 @@ export function bindEvents(){
     const activeScreen = document.querySelector('.screen.active').id;
     if(activeScreen === 'screen-study'){
       if(e.code === 'Space'){ e.preventDefault(); flipCard(); }
-      else if(e.code === 'ArrowRight' && session.flipped){ answerFlashcard(true); }
-      else if(e.code === 'ArrowLeft' && session.flipped){ answerFlashcard(false); }
+      else if(e.key === '1' && session.flipped){ answerFlashcard(1); }
+      else if(e.key === '2' && session.flipped){ answerFlashcard(2); }
+      else if(e.key === '3' && session.flipped){ answerFlashcard(3); }
+      else if(e.key === '4' && session.flipped){ answerFlashcard(4); }
       else if(e.key === 'u' || e.key === 'U'){ undoLastAnswer(); }
     } else if(activeScreen === 'screen-quiz'){
       const num = parseInt(e.key,10);

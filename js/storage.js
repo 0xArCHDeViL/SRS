@@ -1,4 +1,4 @@
-import { STORE_KEY, SETTINGS_KEY, STREAK_STORE_KEY } from './config.js';
+import { STORE_KEY, SETTINGS_KEY, STREAK_STORE_KEY, createEmptyCard, State } from './config.js';
 import { srsState, settings, streakCache, setSrsState, setSettings, setStreakCache } from './state.js';
 import { todayISO, addDaysISO } from './utils.js';
 
@@ -40,7 +40,39 @@ export const StorageAPI = {
 export async function loadState(){
   try {
     const stateStr = await StorageAPI.get(STORE_KEY);
-    if (stateStr) setSrsState(JSON.parse(stateStr));
+    if (stateStr) {
+      let parsed = JSON.parse(stateStr);
+      // Migration script: convert old scalar box to FSRS card object
+      for(let key in parsed){
+        let st = parsed[key];
+        if(st.box !== undefined){
+          let card = createEmptyCard(new Date());
+          if (st.box === 0) {
+            card.state = State.New;
+          } else {
+            card.state = State.Review;
+            // Guessing stability based on old box (intervals were 1, 3, 7, 16, 35)
+            const stabs = [0, 1, 3, 7, 16, 35];
+            card.stability = stabs[st.box] || 1;
+            card.difficulty = 5.0;
+            card.reps = st.seen || 0;
+            card.lapses = st.wrong || 0;
+            // set due date from old string
+            card.due = st.due ? new Date(st.due) : new Date();
+            card.last_review = st.lastSeen ? new Date(st.lastSeen) : new Date();
+          }
+          card.seen = st.seen || 0;
+          card.correct = st.correct || 0;
+          card.wrong = st.wrong || 0;
+          parsed[key] = card;
+        } else {
+          // If already migrated, we just need to ensure due dates are Date objects
+          if(st.due && typeof st.due === 'string') st.due = new Date(st.due);
+          if(st.last_review && typeof st.last_review === 'string') st.last_review = new Date(st.last_review);
+        }
+      }
+      setSrsState(parsed);
+    }
   } catch(e) { setSrsState({}); }
 
   try {
@@ -67,7 +99,11 @@ export function saveStreak(){
 
 export function getCardState(id){
   if(!srsState[id]){
-    srsState[id] = { box:0, due: todayISO(), seen:0, correct:0, wrong:0, lastSeen:null };
+    let card = createEmptyCard(new Date());
+    card.seen = 0;
+    card.correct = 0;
+    card.wrong = 0;
+    srsState[id] = card;
   }
   return srsState[id];
 }

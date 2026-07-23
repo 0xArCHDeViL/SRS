@@ -12,7 +12,22 @@ export function addDaysISO(days){
   return d.toISOString().slice(0,10);
 }
 export function isDue(cardState){
-  return cardState.due <= todayISO();
+  // cardState.due is a Date object from FSRS
+  return cardState.due.getTime() <= Date.now();
+}
+export function formatTimeDiff(diffMs) {
+  const diffSec = Math.floor(diffMs / 1000);
+  if (diffSec < 60) return `${diffSec}s`;
+  const diffMin = Math.floor(diffSec / 60);
+  if (diffMin < 60) return `${diffMin}m`;
+  const diffHour = Math.floor(diffMin / 60);
+  if (diffHour < 24) return `${diffHour}h`;
+  const diffDay = Math.floor(diffHour / 24);
+  if (diffDay < 30) return `${diffDay}d`;
+  const diffMonth = Math.floor(diffDay / 30);
+  if (diffMonth < 12) return `${diffMonth}mo`;
+  const diffYear = Math.floor(diffMonth / 12);
+  return `${diffYear}y`;
 }
 export function renderFurigana(card, withFurigana){
   if(!withFurigana){

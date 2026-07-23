@@ -1,5 +1,5 @@
 import { filterState, settings, session, setSession, srsState, setSrsState, ALL_CARDS, pendingMode } from './state.js';
-import { BOX_INTERVALS_DAYS } from './config.js';
+import { f, Rating } from './config.js';
 import { saveState, getCardState, touchStreak } from './storage.js';
 import { buildSession } from './data.js';
 import { showScreen, renderFlashcard, toast } from './ui.js';
@@ -16,7 +16,7 @@ export function startFlashcardSession(){
   renderFlashcard();
 }
 
-export function answerFlashcard(remembered){
+export function answerFlashcard(rating){
   const card = session.queue[session.idx];
   const st = getCardState(card.id);
 
@@ -24,24 +24,28 @@ export function answerFlashcard(remembered){
     cardId: card.id,
     idx: session.idx,
     prevState: JSON.parse(JSON.stringify(st)),
-    wasCorrect: remembered,
+    wasCorrect: rating > Rating.Again,
     prevSessionCorrect: session.correct,
     prevSessionWrong: session.wrong
   };
 
   st.seen++;
-  st.lastSeen = todayISO();
-  if(remembered){
+  st.lastSeen = todayISO(); // Keep lastSeen around for simple checking if touched
+
+  if(rating > Rating.Again){
     st.correct++;
-    st.box = Math.min(st.box + 1, BOX_INTERVALS_DAYS.length - 1);
-    st.due = addDaysISO(BOX_INTERVALS_DAYS[st.box]);
     session.correct++;
   } else {
     st.wrong++;
-    st.box = 0;
-    st.due = todayISO();
     session.wrong++;
   }
+
+  const nextStates = f.repeat(st, new Date());
+  const logItem = nextStates[rating];
+
+  // Update state with FSRS calculation
+  Object.assign(st, logItem.card);
+
   saveState();
   advanceSession();
 }
@@ -218,17 +222,22 @@ export function handleQuizAnswer(btn, card){
   const st = getCardState(card.id);
   st.seen++;
   st.lastSeen = todayISO();
+
+  let rating;
   if(isCorrect){
     st.correct++;
-    st.box = Math.min(st.box + 1, BOX_INTERVALS_DAYS.length - 1);
-    st.due = addDaysISO(BOX_INTERVALS_DAYS[st.box]);
     session.correct++;
+    rating = Rating.Good;
   } else {
     st.wrong++;
-    st.box = 0;
-    st.due = todayISO();
     session.wrong++;
+    rating = Rating.Again;
   }
+
+  const nextStates = f.repeat(st, new Date());
+  const logItem = nextStates[rating];
+
+  Object.assign(st, logItem.card);
   saveState();
 
   setTimeout(()=>{
