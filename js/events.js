@@ -88,10 +88,6 @@ export function renderQuickSettings(){
       <label class="toggle"><input type="checkbox" id="toggleRomaji" ${settings.romaji?'checked':''}><span class="track"><span class="thumb"></span></span></label>
     </div>
     <div class="qsettings-row">
-      <div class="qs-label"><span class="qi">筆</span> Guided Draw<small>Snap goresan kanji ke bentuk rapi</small></div>
-      <label class="toggle"><input type="checkbox" id="toggleGuided" ${settings.drawGuided?'checked':''}><span class="track"><span class="thumb"></span></span></label>
-    </div>
-    <div class="qsettings-row">
       <div class="qs-label"><span class="qi">＋</span> Kartu baru / sesi<small>0 = tanpa batas. Kartu banyak = otak numpuk.</small></div>
       <div class="stepper">
         <button data-step="new" data-dir="-1">−</button>
@@ -114,9 +110,6 @@ export function renderQuickSettings(){
   el.querySelector('#toggleRomaji').addEventListener('change', e=>{
     setSettings({romaji: e.target.checked}); saveSettings();
   });
-  el.querySelector('#toggleGuided').addEventListener('change', e=>{
-    setSettings({drawGuided: e.target.checked}); saveSettings();
-  });
   el.querySelectorAll('button[data-step]').forEach(btn=>{
     btn.addEventListener('click', ()=>{
       const dir = parseInt(btn.dataset.dir,10);
@@ -134,13 +127,6 @@ export function renderQuickSettings(){
 
 
 export function bindEvents(){
-  document.getElementById('modeMenulis').addEventListener('click', ()=>{
-    filterState.scope='all';
-    renderFilterScreen('Menulis (Stroke Order)', toggleBabSelection, toggleGroupSelection);
-    setPendingMode('menulis');
-    showScreen('screen-filter');
-  });
-
   document.getElementById('modeFlashcard').addEventListener('click', ()=>{
     filterState.scope='all';
     renderFilterScreen('Flashcard SRS', toggleBabSelection, toggleGroupSelection);
@@ -185,9 +171,6 @@ export function bindEvents(){
     if(pendingMode === 'flashcard') startFlashcardSession();
     else if(pendingMode === 'quiz-kanji') startQuizKanjiSession();
     else if(pendingMode === 'quiz-arti') startQuizArtiSession();
-    else if(pendingMode === 'menulis') {
-      import('./modes.js').then(m => m.startMenulisSession());
-    }
   });
 
   document.getElementById('flashcard').addEventListener('click', flipCard);
@@ -198,7 +181,6 @@ export function bindEvents(){
   document.getElementById('studyUndo').addEventListener('click', (e)=>{ e.stopPropagation(); undoLastAnswer(); });
   document.getElementById('studyExit').addEventListener('click', ()=> confirmExitSession());
   document.getElementById('quizExit').addEventListener('click', ()=> confirmExitSession());
-  document.getElementById('menulisExit').addEventListener('click', ()=> confirmExitSession());
 
   document.getElementById('exitModalCancel').addEventListener('click', ()=> closeExitModal());
   document.getElementById('exitModalConfirm').addEventListener('click', ()=>{
@@ -216,9 +198,6 @@ export function bindEvents(){
     if(session.mode==='flashcard') startFlashcardSession();
     else if(session.mode==='quiz-kanji') startQuizKanjiSession();
     else if(session.mode==='quiz-arti') startQuizArtiSession();
-    else if(session.mode==='menulis') {
-      import('./modes.js').then(m => m.startMenulisSession());
-    }
   });
 
   document.getElementById('btnStats').addEventListener('click', ()=>{
