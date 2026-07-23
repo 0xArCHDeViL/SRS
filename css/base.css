@@ -1,0 +1,24 @@
+/* Base elements */
+*{box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent;}
+html,body{height:100%;}
+body{
+  background:
+    radial-gradient(ellipse 800px 500px at 15% -10%, rgba(61,107,138,0.12), transparent),
+    radial-gradient(ellipse 600px 400px at 90% 100%, rgba(200,90,63,0.06), transparent),
+    var(--sumi-0);
+  color:var(--text-hi);
+  font-family:var(--sans);
+  min-height:100vh;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+#app{ max-width:560px; margin:0 auto; min-height:100vh; display:flex; flex-direction:column; position:relative;}
+
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; }
+}
+
+button:focus-visible, [tabindex]:focus-visible, input:focus-visible, select:focus-visible{
+  outline:2px solid var(--ai-glow);
+  outline-offset:2px;
+}

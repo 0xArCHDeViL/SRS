@@ -1,0 +1,35 @@
+
+/* ============================================================
+   QUBIT SRS — DESIGN SYSTEM
+   ============================================================ */
+
+:root{
+  --sumi-0:#0b0f14;
+  --sumi-1:#11171f;
+  --sumi-2:#182029;
+  --sumi-3:#232d38;
+  --sumi-4:#334152;
+  --kinari:#f2ead9;
+  --kinari-dim:#d8cdb4;
+  --ai:#3d6b8a;
+  --ai-bright:#5a93b8;
+  --ai-dim:#274a5e;
+  --ai-glow:#7ab3d6;
+  --shu:#c85a3f;
+  --shu-bright:#e07456;
+  --matcha:#7ba05b;
+  --matcha-bright:#93bd70;
+  --kin:#c9a24b;
+  --text-hi:#eef2f5;
+  --text-mid:#9fb0bd;
+  --text-lo:#5f7182;
+  --serif-jp:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans-jp:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;
+  --mono:"JetBrains Mono","IBM Plex Mono",ui-monospace,"SF Mono",Consolas,monospace;
+  --sans:"Inter","IBM Plex Sans",-apple-system,sans-serif;
+  --radius-s:6px;
+  --radius-m:12px;
+  --radius-l:20px;
+  --shadow-card:0 8px 30px -8px rgba(0,0,0,0.5), 0 2px 8px -2px rgba(0,0,0,0.4);
+  --shadow-pop:0 16px 50px -12px rgba(0,0,0,0.6);
+}
