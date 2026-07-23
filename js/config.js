@@ -1,4 +1,4 @@
-import { fsrs, createEmptyCard, Rating, State } from './vendor/ts-fsrs.mjs';
+import { fsrs, createEmptyCard, Rating, State } from './vendor/ts-fsrs.js';
 
 export const STORE_KEY = 'srs_state';
 export const SETTINGS_KEY = 'srs_settings';
