@@ -4,6 +4,9 @@ import { saveState, getCardState, touchStreak } from './storage.js';
 import { buildSession } from './data.js';
 import { showScreen, renderFlashcard, toast } from './ui.js';
 import { todayISO, addDaysISO, shuffle, escapeHtml, titleCase } from './utils.js';
+import { startQuizMenulisSession, renderQuizMenulis } from './mode-menulis.js';
+
+export { startQuizMenulisSession };
 
 export function startFlashcardSession(){
   const queue = buildSession();
@@ -74,6 +77,7 @@ export function advanceSession(){
     if(session.mode === 'flashcard') renderFlashcard();
     else if(session.mode === 'quiz-kanji') renderQuizKanji();
     else if(session.mode === 'quiz-arti') renderQuizArti();
+    else if(session.mode === 'quiz-menulis') renderQuizMenulis();
   }
 }
 

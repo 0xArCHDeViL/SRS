@@ -1,7 +1,7 @@
 import { filterState, pendingMode, setPendingMode, META, session, srsState, setSrsState, ALL_CARDS, settings, setSettings } from './state.js';
 import { saveState, saveSettings } from './storage.js';
 import { showScreen, renderFilterScreen, renderHome, updateFilterSelCount, renderStats, showResetModal, closeResetModal, closeExitModal, toast, flipCard } from './ui.js';
-import { startFlashcardSession, startQuizKanjiSession, startQuizArtiSession, answerFlashcard, undoLastAnswer, handleQuizAnswer } from './modes.js';
+import { startFlashcardSession, startQuizKanjiSession, startQuizArtiSession, answerFlashcard, undoLastAnswer, handleQuizAnswer, startQuizMenulisSession } from './modes.js';
 
 export function toggleBabSelection(bab){
   if(filterState.selectedBabs.has(bab)){
@@ -80,6 +80,18 @@ export function renderQuickSettings(){
   const reviewDisplay = settings.reviewCap === 0 ? '∞' : settings.reviewCap;
   el.innerHTML = `
     <div class="qsettings-row">
+      <div class="qs-label"><span class="qi">✍️</span> Mode Gambar<small>Guided (Snap-to-stroke) atau Manual</small></div>
+      <label class="toggle"><input type="checkbox" id="toggleGuided" ${settings.guidedDrawing?'checked':''}><span class="track"><span class="thumb"></span></span></label>
+    </div>
+    <div class="qsettings-row">
+      <div class="qs-label"><span class="qi">⊞</span> Grid Bantuan<small>Pola garis di canvas (2x2, 3x3, dsb)</small></div>
+      <div class="stepper">
+        <button data-step="grid" data-dir="-1">−</button>
+        <span class="val" id="valGridLines">${settings.gridLines===0?'Off':settings.gridLines}</span>
+        <button data-step="grid" data-dir="1">+</button>
+      </div>
+    </div>
+    <div class="qsettings-row">
       <div class="qs-label"><span class="qi">振</span> Furigana<small>Tampilkan cara baca di atas kanji</small></div>
       <label class="toggle"><input type="checkbox" id="toggleFurigana" ${settings.furigana?'checked':''}><span class="track"><span class="thumb"></span></span></label>
     </div>
@@ -104,6 +116,9 @@ export function renderQuickSettings(){
       </div>
     </div>
   `;
+  el.querySelector('#toggleGuided').addEventListener('change', e=>{
+    setSettings({guidedDrawing: e.target.checked}); saveSettings();
+  });
   el.querySelector('#toggleFurigana').addEventListener('change', e=>{
     setSettings({furigana: e.target.checked}); saveSettings();
   });
@@ -115,6 +130,11 @@ export function renderQuickSettings(){
       const dir = parseInt(btn.dataset.dir,10);
       if(btn.dataset.step === 'new'){
         setSettings({newPerSession: Math.max(0, Math.min(300, settings.newPerSession + dir*1))});
+      } else if(btn.dataset.step === 'grid'){
+        let next = settings.gridLines + dir;
+        if (next < 0) next = 0; // 0=Off
+        if (next > 4) next = 4; // 2x2, 3x3, 4x4
+        setSettings({gridLines: next});
       } else {
         setSettings({reviewCap: Math.max(0, Math.min(999, settings.reviewCap + dir*5))});
       }
@@ -145,6 +165,12 @@ export function bindEvents(){
     setPendingMode('quiz-arti');
     showScreen('screen-filter');
   });
+  document.getElementById('modeMenulis').addEventListener('click', ()=>{
+    filterState.scope='all';
+    renderFilterScreen('Menulis (Stroke)', toggleBabSelection, toggleGroupSelection);
+    setPendingMode('quiz-menulis');
+    showScreen('screen-filter');
+  });
 
   document.getElementById('filterBack').addEventListener('click', ()=>{
     showScreen('screen-home'); renderHome(quickStartSession); renderQuickSettings();
@@ -171,6 +197,7 @@ export function bindEvents(){
     if(pendingMode === 'flashcard') startFlashcardSession();
     else if(pendingMode === 'quiz-kanji') startQuizKanjiSession();
     else if(pendingMode === 'quiz-arti') startQuizArtiSession();
+    else if(pendingMode === 'quiz-menulis') startQuizMenulisSession();
   });
 
   document.getElementById('flashcard').addEventListener('click', flipCard);
@@ -181,6 +208,7 @@ export function bindEvents(){
   document.getElementById('studyUndo').addEventListener('click', (e)=>{ e.stopPropagation(); undoLastAnswer(); });
   document.getElementById('studyExit').addEventListener('click', ()=> confirmExitSession());
   document.getElementById('quizExit').addEventListener('click', ()=> confirmExitSession());
+  document.getElementById('menulisExit').addEventListener('click', ()=> confirmExitSession());
 
   document.getElementById('exitModalCancel').addEventListener('click', ()=> closeExitModal());
   document.getElementById('exitModalConfirm').addEventListener('click', ()=>{
@@ -198,6 +226,7 @@ export function bindEvents(){
     if(session.mode==='flashcard') startFlashcardSession();
     else if(session.mode==='quiz-kanji') startQuizKanjiSession();
     else if(session.mode==='quiz-arti') startQuizArtiSession();
+    else if(session.mode==='quiz-menulis') startQuizMenulisSession();
   });
 
   document.getElementById('btnStats').addEventListener('click', ()=>{

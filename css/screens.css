@@ -392,3 +392,79 @@
 @media (max-width:380px){
   .quiz-prompt-main{ font-size:36px; }
 }
+
+/* ============ Menulis Study Screen ============ */
+#screen-menulis .card-stage {
+  padding-top: 40px;
+}
+.menulis-prompt {
+  width: 100%;
+  max-width: 420px;
+  background: var(--sumi-1);
+  border: 1px solid var(--sumi-3);
+  border-radius: 20px;
+  padding: 30px 22px;
+  text-align: center;
+}
+.menulis-arti {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-hi);
+  word-break: break-word;
+}
+.menulis-reading {
+  font-size: 24px;
+  font-family: var(--sans-jp);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.menulis-slot {
+  display: inline-block;
+  min-width: 40px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--ai-glow);
+  padding: 4px;
+  border-radius: 6px;
+  background: rgba(61,107,138,0.15);
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+.menulis-slot:hover {
+  background: rgba(61,107,138,0.3);
+  border-color: var(--ai);
+}
+.menulis-slot.completed {
+  background: transparent;
+  color: var(--text-hi);
+  font-family: var(--serif-jp);
+  font-size: 32px;
+  font-weight: normal;
+  border-bottom: 2px solid var(--matcha);
+  border-radius: 0;
+  pointer-events: none;
+}
+.menulis-text {
+  color: var(--text-hi);
+}
+.menulis-help {
+  margin-top: 24px;
+  font-size: 13px;
+  color: var(--text-lo);
+  animation: hint-breathe 2.4s ease-in-out infinite;
+}
+
+/* Canvas styling */
+.canvas-container {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  border: 2px solid var(--sumi-4);
+  touch-action: none;
+}
+.canvas-actions button {
+  flex: 1;
+}
