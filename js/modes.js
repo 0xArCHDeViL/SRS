@@ -74,7 +74,6 @@ export function advanceSession(){
     if(session.mode === 'flashcard') renderFlashcard();
     else if(session.mode === 'quiz-kanji') renderQuizKanji();
     else if(session.mode === 'quiz-arti') renderQuizArti();
-    else if(session.mode === 'menulis') import('./menulis.js').then(m => m.renderMenulis());
   }
 }
 
@@ -274,17 +273,4 @@ export function finishSession(){
   document.getElementById('summarySub').textContent = sub;
 
   showScreen('screen-summary');
-}
-
-
-
-export function startMenulisSession() {
-  const queue = buildSession().filter(c => c.has_kanji !== false && c.kanji);
-  if(queue.length === 0){
-    toast('Nggak ada kartu yang punya kanji buat ditulis 🤔');
-    return;
-  }
-  setSession({ mode:'menulis', queue, idx:0, correct:0, wrong:0, answered:false });
-  showScreen('screen-menulis');
-  import('./menulis.js').then(m => m.renderMenulis());
 }

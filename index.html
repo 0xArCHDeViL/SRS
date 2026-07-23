@@ -66,14 +66,6 @@
           </div>
           <div class="mode-arrow">›</div>
         </button>
-        <button class="mode-card" id="modeMenulis" style="--accent-c:var(--shu-bright);">
-          <div class="mode-icon" style="--icon-bg:rgba(217,92,80,0.18); --icon-fg:var(--shu-bright);">書</div>
-          <div class="mode-body">
-            <div class="t">Menulis (Stroke Order)</div>
-            <div class="d">Lihat arti, gambar kanji sesuai urutan goresan</div>
-          </div>
-          <div class="mode-arrow">›</div>
-        </button>
       </div>
 
       <div class="section-label">Quick Settings</div>
@@ -157,48 +149,6 @@
         <span><span class="kbd">3</span> Good</span>
         <span><span class="kbd">4</span> Easy</span>
         <span><span class="kbd">U</span> undo</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ MENULIS SCREEN ============ -->
-  <section class="screen" id="screen-menulis">
-    <div class="study-header">
-      <button class="icon-btn" id="menulisExit" aria-label="Keluar">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
-      </button>
-      <div class="progress-track"><div class="progress-fill" id="menulisProgress"></div></div>
-      <div class="study-count" id="menulisCount">0/0</div>
-    </div>
-    <div class="card-stage" style="padding-top:10px;">
-      <div class="quiz-prompt" style="margin-bottom:12px;">
-        <div class="quiz-prompt-label">TULIS KANJI DARI ARTI INI</div>
-        <div class="quiz-prompt-main small" id="menulisArti" style="font-size:24px; margin-bottom:8px;"></div>
-        <div class="quiz-prompt-main" id="menulisKana" style="font-size:32px; color:var(--text-lo); font-family:var(--gothic); letter-spacing:2px;"></div>
-      </div>
-
-      <!-- Canvas Area -->
-      <div class="canvas-container" id="canvasContainer" style="position:relative; width:100%; aspect-ratio:1/1; max-width:320px; margin:0 auto; background:var(--bg-2); border:2px solid var(--sumi-2); border-radius:12px; overflow:hidden; touch-action:none;">
-        <!-- Grid -->
-        <svg width="100%" height="100%" viewBox="0 0 100 100" style="position:absolute; inset:0; pointer-events:none; opacity:0.15;" id="canvasGrid">
-          <line x1="50" y1="0" x2="50" y2="100" stroke="currentColor" stroke-dasharray="4" />
-          <line x1="0" y1="50" x2="100" y2="50" stroke="currentColor" stroke-dasharray="4" />
-        </svg>
-        <!-- Guided Snap Layer -->
-        <svg id="canvasGuided" width="100%" height="100%" viewBox="0 0 109 109" style="position:absolute; inset:0; pointer-events:none; opacity:1;"></svg>
-        <!-- Shadow / Hint Layer -->
-        <svg id="canvasHint" width="100%" height="100%" viewBox="0 0 109 109" style="position:absolute; inset:0; pointer-events:none; opacity:0.15;"></svg>
-        <!-- Drawing Layer -->
-        <canvas id="drawCanvas" style="position:absolute; inset:0; width:100%; height:100%;"></canvas>
-      </div>
-
-      <div style="text-align:center; margin-top:12px; font-size:13px; color:var(--text-lo);" id="menulisScore"></div>
-
-      <div class="quiz-options opt4" style="margin-top:20px;">
-        <button class="opt-btn" id="btnMenulisClear" style="border-color:var(--text-lo); color:var(--text-lo);">🗑️ Hapus</button>
-        <button class="opt-btn" id="btnMenulisHint" style="border-color:var(--kin); color:var(--kin);">💡 Hint</button>
-        <button class="opt-btn" id="btnMenulisSkip" style="border-color:var(--shu-bright); color:var(--shu-bright);">⏭️ Skip</button>
-        <button class="opt-btn" id="btnMenulisDone" style="border-color:var(--matcha); color:var(--matcha);" disabled>✓ Selesai</button>
       </div>
     </div>
   </section>
