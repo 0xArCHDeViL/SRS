@@ -66,6 +66,14 @@
           </div>
           <div class="mode-arrow">›</div>
         </button>
+        <button class="mode-card" id="modeMenulis" style="--accent-c:var(--shu);">
+          <div class="mode-icon" style="--icon-bg:rgba(217,83,79,0.18); --icon-fg:var(--shu-bright);">書</div>
+          <div class="mode-body">
+            <div class="t">Menulis (Stroke)</div>
+            <div class="d">Lihat arti, gambar kanji sesuai urutan</div>
+          </div>
+          <div class="mode-arrow">›</div>
+        </button>
       </div>
 
       <div class="section-label">Quick Settings</div>
@@ -77,7 +85,7 @@
     </div>
   </section>
 
-  <!-- ============ FILTER SCREEN ============ -->
+<!-- ============ FILTER SCREEN ============ -->
   <section class="screen" id="screen-filter">
     <div class="topbar">
       <button class="icon-btn" id="filterBack" aria-label="Kembali">
@@ -174,6 +182,50 @@
     </div>
   </section>
 
+  <!-- ============ MENULIS STUDY SCREEN ============ -->
+  <section class="screen" id="screen-menulis">
+    <div class="study-header">
+      <button class="icon-btn" id="menulisExit" aria-label="Keluar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="progress-track"><div class="progress-fill" id="menulisProgress"></div></div>
+      <div class="study-count" id="menulisCount">0/0</div>
+    </div>
+    <div class="card-stage" style="justify-content: flex-start; padding-top: 2rem;">
+      <div class="menulis-prompt" id="menulisPrompt">
+        <div class="menulis-arti" id="menulisArti">Arti Kata</div>
+        <div class="menulis-reading" id="menulisReading"></div>
+      </div>
+      <div class="menulis-help">Klik pada [...] untuk mulai menggambar</div>
+    </div>
+  </section>
+
+  <!-- ============ CANVAS MODAL ============ -->
+  <div class="modal-overlay" id="canvasModalOverlay" style="display:none; flex-direction:column; background:var(--bg);">
+    <div class="canvas-header" style="display:flex; justify-content:space-between; align-items:center; width:100%; max-width:600px; padding:16px;">
+      <button class="btn btn-ghost" id="canvasBatal">Batal</button>
+      <div style="text-align:center;">
+        <div style="font-size:12px; color:var(--text-lo)">Skor Bentuk: <span id="scoreShape">0</span>%</div>
+        <div style="font-size:12px; color:var(--text-lo)">Skor Urutan: <span id="scoreOrder">0</span>%</div>
+      </div>
+      <button class="btn btn-primary" id="canvasSelesai" disabled>Selesai</button>
+    </div>
+
+    <div class="canvas-container" style="position:relative; width:300px; height:300px; background:var(--sumi-2); border-radius:12px; overflow:hidden;">
+      <canvas id="drawingCanvas" width="300" height="300" style="position:absolute; top:0; left:0; z-index:10; touch-action:none;"></canvas>
+      <canvas id="guideCanvas" width="300" height="300" style="position:absolute; top:0; left:0; z-index:5; pointer-events:none;"></canvas>
+      <!-- Grid Overlay -->
+      <svg id="canvasGridOverlay" width="300" height="300" style="position:absolute; top:0; left:0; z-index:1; pointer-events:none;">
+      </svg>
+    </div>
+
+    <div class="canvas-actions" style="display:flex; gap:16px; margin-top:24px;">
+      <button class="btn btn-ghost" id="canvasHint">💡 Hint (Tap/Hold)</button>
+      <button class="btn btn-ghost" id="canvasClear">Hapus Semua</button>
+      <button class="btn btn-ghost" id="canvasSkip" style="color:var(--shu-bright)">Skip</button>
+    </div>
+  </div>
+
   <!-- ============ SUMMARY SCREEN ============ -->
   <section class="screen" id="screen-summary">
     <div class="topbar">
@@ -248,6 +300,8 @@
   </div>
 </div>
 
+<script src="js/vendor/kanji-canvas.min.js"></script>
+<script src="js/vendor/ref-patterns.js"></script>
 <script type="module" src="js/app.js"></script>
 </body>
 </html>

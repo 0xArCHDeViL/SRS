@@ -1,3 +1,4 @@
+import { startQuizMenulisSession } from './mode-menulis.js';
 import { fetchDatabase } from './data.js';
 import { loadState } from './storage.js';
 import { bindEvents, renderQuickSettings, quickStartSession } from './events.js';

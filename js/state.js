@@ -10,7 +10,9 @@ export let settings = {
   autoPlayNone: true,
   newPerSession: 12,
   reviewCap: 40,
-  theme: 'dark'
+  theme: 'dark',
+  guidedDrawing: true,
+  gridLines: 2
 };
 export let streakCache = { count:0, lastDay:null };
 
