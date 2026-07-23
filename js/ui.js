@@ -1,7 +1,8 @@
 import { META, ALL_CARDS, srsState, settings, filterState, filterExpandedBab, session, setSrsState } from './state.js';
 import { peekStreak, saveState, getCardState } from './storage.js';
 import { computeDueNewCounts, getFilteredCards } from './data.js';
-import { escapeHtml, titleCase, renderFurigana, toRomaji } from './utils.js';
+import { escapeHtml, titleCase, renderFurigana, toRomaji, formatTimeDiff } from './utils.js';
+import { f, Rating } from './config.js';
 
 export function showScreen(id){
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -162,7 +163,20 @@ export function renderFlashcard(){
   document.getElementById('cardGroupBack').textContent = titleCase(card.group || '');
 
   const st = getCardState(card.id);
-  renderBoxRing('boxRingFront', st.box);
+
+  // Predict next intervals using FSRS
+  const now = new Date();
+  const nextStates = f.repeat(st, now);
+
+  const againDiff = nextStates[Rating.Again].card.due.getTime() - now.getTime();
+  const hardDiff = nextStates[Rating.Hard].card.due.getTime() - now.getTime();
+  const goodDiff = nextStates[Rating.Good].card.due.getTime() - now.getTime();
+  const easyDiff = nextStates[Rating.Easy].card.due.getTime() - now.getTime();
+
+  document.getElementById('lblAgain').textContent = formatTimeDiff(againDiff);
+  document.getElementById('lblHard').textContent = formatTimeDiff(hardDiff);
+  document.getElementById('lblGood').textContent = formatTimeDiff(goodDiff);
+  document.getElementById('lblEasy').textContent = formatTimeDiff(easyDiff);
 
   document.getElementById('tapHint').style.display = 'flex';
 
@@ -225,21 +239,25 @@ export function renderQuizKanji(handleQuizAnswerCb){
   // Import buildKanaDistractors dynamically or passed as argument since it's in modes.js
 }
 
+import { State } from './config.js';
+
 export function renderStats(showResetModalCb){
   const el = document.getElementById('statsContent');
-  let box0=0,box1=0,box2to4=0,box5=0, totalSeen=0, totalCorrect=0, totalWrong=0;
+  let stNew=0, stLearning=0, stReview=0, stRelearning=0, totalSeen=0, totalCorrect=0, totalWrong=0;
   for(const c of ALL_CARDS){
     const st = srsState[c.id];
-    if(!st){ box0++; continue; }
-    if(st.box===0) box0++;
-    else if(st.box===1) box1++;
-    else if(st.box>=2 && st.box<=4) box2to4++;
-    else box5++;
+    if(!st){ stNew++; continue; }
+
+    if(st.state === State.New) stNew++;
+    else if(st.state === State.Learning) stLearning++;
+    else if(st.state === State.Review) stReview++;
+    else if(st.state === State.Relearning) stRelearning++;
+
     totalSeen += st.seen||0;
     totalCorrect += st.correct||0;
     totalWrong += st.wrong||0;
   }
-  const learned = box1+box2to4+box5;
+  const learned = stLearning + stReview + stRelearning;
   const acc = (totalCorrect+totalWrong)>0 ? Math.round(totalCorrect/(totalCorrect+totalWrong)*100) : 0;
   const streak = peekStreak();
 
@@ -252,12 +270,12 @@ export function renderStats(showResetModalCb){
         <div class="stat-chip new"><div class="num">${learned}</div><div class="lbl">Kartu Disentuh</div></div>
       </div>
     </div>
-    <div class="section-label">Distribusi Box (Leitner)</div>
+    <div class="section-label">Status Memori FSRS</div>
     <div class="qsettings" style="padding:14px;">
-      ${renderBoxBar('Box 0 · Belum / Reset', box0, META.total_cards || 0, 'var(--text-lo)')}
-      ${renderBoxBar('Box 1 · Baru dikenal', box1, META.total_cards || 0, 'var(--shu-bright)')}
-      ${renderBoxBar('Box 2–4 · Menguat', box2to4, META.total_cards || 0, 'var(--kin)')}
-      ${renderBoxBar('Box 5 · Matang', box5, META.total_cards || 0, 'var(--matcha-bright)')}
+      ${renderBoxBar('Baru (New)', stNew, META.total_cards || 0, 'var(--text-lo)')}
+      ${renderBoxBar('Belajar (Learning)', stLearning, META.total_cards || 0, 'var(--shu-bright)')}
+      ${renderBoxBar('Diingat (Review)', stReview, META.total_cards || 0, 'var(--matcha-bright)')}
+      ${renderBoxBar('Lupa (Relearning)', stRelearning, META.total_cards || 0, 'var(--kin)')}
     </div>
     <div class="section-label">Per BAB</div>
     <div class="qsettings" style="padding:6px;">

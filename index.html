@@ -136,14 +136,18 @@
         </div>
       </div>
       <div class="tap-hint" id="tapHint">👆 Ketuk kartu, atau tekan Spasi</div>
-      <div class="answer-row" id="answerRow">
-        <button class="ans-btn no" id="btnNo">✕ <span>Tidak Ingat</span><span class="sub">Ulangi lagi nanti</span></button>
-        <button class="ans-btn yes" id="btnYes">✓ <span>Ingat</span><span class="sub">Naik level</span></button>
+      <div class="answer-row" id="answerRow" style="gap:6px;">
+        <button class="ans-btn no" id="btnAgain" data-rating="1">1 <span>Again</span><span class="sub" id="lblAgain">1m</span></button>
+        <button class="ans-btn" id="btnHard" data-rating="2" style="border-color:var(--text-lo); color:var(--text-lo);">2 <span>Hard</span><span class="sub" id="lblHard">5m</span></button>
+        <button class="ans-btn yes" id="btnGood" data-rating="3">3 <span>Good</span><span class="sub" id="lblGood">10m</span></button>
+        <button class="ans-btn yes" id="btnEasy" data-rating="4" style="border-color:var(--ai-bright); color:var(--ai-bright);">4 <span>Easy</span><span class="sub" id="lblEasy">1d</span></button>
       </div>
       <div class="kbd-hints">
-        <span><span class="kbd">Space</span> balik kartu</span>
-        <span><span class="kbd">←</span> tidak ingat</span>
-        <span><span class="kbd">→</span> ingat</span>
+        <span><span class="kbd">Space</span> balik</span>
+        <span><span class="kbd">1</span> Again</span>
+        <span><span class="kbd">2</span> Hard</span>
+        <span><span class="kbd">3</span> Good</span>
+        <span><span class="kbd">4</span> Easy</span>
         <span><span class="kbd">U</span> undo</span>
       </div>
     </div>

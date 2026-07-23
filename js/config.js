@@ -1,9 +1,12 @@
+import { fsrs, createEmptyCard, Rating, State } from './vendor/ts-fsrs.mjs';
+
 export const STORE_KEY = 'srs_state';
 export const SETTINGS_KEY = 'srs_settings';
 export const STREAK_STORE_KEY = 'srs_streak';
 export const DATA_URL = 'database/kotoba/database.json';
 
-export const BOX_INTERVALS_DAYS = [0, 1, 3, 7, 16, 35];
+export const f = fsrs();
+export { createEmptyCard, Rating, State };
 
 export const KANA_TO_ROMAJI = {
   'あ':'a','い':'i','う':'u','え':'e','お':'o',
