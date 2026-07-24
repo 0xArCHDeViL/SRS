@@ -6,6 +6,7 @@ let currentPath = null;
 let isDrawing = false;
 let targetChar = '';
 let targetPaths = [];
+let targetChar = '';
 let completionCallback = null;
 
 const CANVAS_SIZE = 300;
@@ -28,6 +29,7 @@ export function setCanvasCompleteCallback(cb) {
 }
 
 export async function initCanvasForKanji(char) {
+  targetChar = char;
   if (!kanjiVgData) await loadKanjiVgData();
 
   targetChar = char;
@@ -142,20 +144,54 @@ function redrawCanvas() {
   ctxDraw.lineJoin = 'round';
   ctxDraw.lineWidth = 6;
 
+  const NUM_POINTS = 20;
+  let targetSamples = targetPaths.map(path => samplePathPoints(path, NUM_POINTS));
+
   for (let i = 0; i < strokeData.length; i++) {
-    if (settings.guidedDrawing && i < targetPaths.length) {
-      // Draw KanjiVG path instead
-      const p = new Path2D(targetPaths[i]);
-      // The KanjiVG data is originally 109x109, we must scale it to 300x300.
-      ctxDraw.save();
-      ctxDraw.scale(CANVAS_SIZE / 109, CANVAS_SIZE / 109);
-      ctxDraw.strokeStyle = 'white';
-      ctxDraw.stroke(p);
-      ctxDraw.restore();
-    } else {
+    let pts = strokeData[i];
+    if(pts.length === 0) continue;
+
+    let snapped = false;
+
+    if (settings.guidedDrawing) {
+      // Find the closest target stroke to what was drawn
+      let userSample = sampleRawStrokePoints(pts, NUM_POINTS);
+      let bestDist = 9999;
+      let bestIdx = -1;
+
+      for (let j = 0; j < targetSamples.length; j++) {
+        let distForward = 0;
+        let distBackward = 0;
+        for (let k = 0; k < NUM_POINTS; k++) {
+          let dx = targetSamples[j][k].x - userSample[k].x;
+          let dy = targetSamples[j][k].y - userSample[k].y;
+          distForward += Math.sqrt(dx*dx + dy*dy);
+
+          let dxRev = targetSamples[j][NUM_POINTS - 1 - k].x - userSample[k].x;
+          let dyRev = targetSamples[j][NUM_POINTS - 1 - k].y - userSample[k].y;
+          distBackward += Math.sqrt(dxRev*dxRev + dyRev*dyRev);
+        }
+        let minDist = Math.min(distForward/NUM_POINTS, distBackward/NUM_POINTS);
+        if (minDist < bestDist) {
+           bestDist = minDist;
+           bestIdx = j;
+        }
+      }
+
+      // Only snap if the stroke is vaguely close to some stroke (distance < 80)
+      if (bestIdx !== -1 && bestDist < 80) {
+        const p = new Path2D(targetPaths[bestIdx]);
+        ctxDraw.save();
+        ctxDraw.scale(CANVAS_SIZE / 109, CANVAS_SIZE / 109);
+        ctxDraw.strokeStyle = 'white';
+        ctxDraw.stroke(p);
+        ctxDraw.restore();
+        snapped = true;
+      }
+    }
+
+    if (!snapped) {
       // Draw raw user path
-      const pts = strokeData[i];
-      if(pts.length===0) continue;
       ctxDraw.beginPath();
       ctxDraw.moveTo(pts[0].x, pts[0].y);
       for(let j=1; j<pts.length; j++) {
@@ -169,99 +205,140 @@ function redrawCanvas() {
 
 // Sub-scores
 function updateScores() {
-  if (strokeData.length === 0) {
+  if (strokeData.length === 0 || targetPaths.length === 0) {
     document.getElementById('scoreShape').textContent = '0';
     document.getElementById('scoreOrder').textContent = '0';
     document.getElementById('canvasSelesai').disabled = true;
     return;
   }
 
-  // Calculate Order Score by matching index by index starting points
-  // We approximate the start point of targetPath by picking its M x,y
-  let orderScore = 0;
+  let totalShapeSum = 0;
   let correctOrders = 0;
-  for (let i = 0; i < Math.min(strokeData.length, targetPaths.length); i++) {
-    const rawStroke = strokeData[i];
-    const targetPathStr = targetPaths[i];
+  const NUM_POINTS = 20;
+  const MAX_DIST = 60; // Max acceptable average pixel distance for points
 
-    if (rawStroke.length > 0 && targetPathStr) {
-       let mMatch = targetPathStr.match(/M([\d\.\-]+),([\d\.\-]+)/);
-       if (mMatch) {
-          // Scale from 109 to CANVAS_SIZE
-          let tx = parseFloat(mMatch[1]) * (CANVAS_SIZE / 109);
-          let ty = parseFloat(mMatch[2]) * (CANVAS_SIZE / 109);
+  // Pre-sample all points
+  let targetSamples = targetPaths.map(path => samplePathPoints(path, NUM_POINTS));
+  let userSamples = strokeData.map(stroke => sampleRawStrokePoints(stroke, NUM_POINTS));
 
-          let sx = rawStroke[0].x;
-          let sy = rawStroke[0].y;
-
-          // distance threshold for starting point to match roughly
-          let dist = Math.sqrt(Math.pow(tx - sx, 2) + Math.pow(ty - sy, 2));
-          if (dist < 40) {
-              correctOrders++;
+  // NORMALIZATION: Calculate bounding boxes for the overall target kanji and the user drawing
+  function getBounds(samples) {
+      let minX = 9999, minY = 9999, maxX = -9999, maxY = -9999;
+      let hasPts = false;
+      for (let s of samples) {
+          for (let p of s) {
+              if (p.x < minX) minX = p.x;
+              if (p.x > maxX) maxX = p.x;
+              if (p.y < minY) minY = p.y;
+              if (p.y > maxY) maxY = p.y;
+              hasPts = true;
           }
-       }
+      }
+      return hasPts ? {minX, minY, maxX, maxY, w: maxX - minX, h: maxY - minY, cx: minX + (maxX - minX)/2, cy: minY + (maxY - minY)/2} : null;
+  }
+
+  let tb = getBounds(targetSamples);
+  let ub = getBounds(userSamples);
+
+  if (tb && ub && ub.w > 0 && ub.h > 0) {
+      let scaleX = tb.w / ub.w;
+      let scaleY = tb.h / ub.h;
+      let scale = Math.min(scaleX, scaleY);
+      if (scale > 3) scale = 3; // Prevent insane scaling for dots
+      if (scale < 0.3) scale = 0.3;
+
+      userSamples = userSamples.map(s => s.map(p => ({
+          x: tb.cx + (p.x - ub.cx) * scale,
+          y: tb.cy + (p.y - ub.cy) * scale
+      })));
+  }
+
+  // Distances matrix user i -> target j
+  let allMatches = [];
+  for (let i = 0; i < userSamples.length; i++) {
+    for (let j = 0; j < targetSamples.length; j++) {
+      let distForward = 0;
+      let distBackward = 0;
+      for (let k = 0; k < NUM_POINTS; k++) {
+        let dx = targetSamples[j][k].x - userSamples[i][k].x;
+        let dy = targetSamples[j][k].y - userSamples[i][k].y;
+        distForward += Math.sqrt(dx*dx + dy*dy);
+
+        let dxRev = targetSamples[j][NUM_POINTS - 1 - k].x - userSamples[i][k].x;
+        let dyRev = targetSamples[j][NUM_POINTS - 1 - k].y - userSamples[i][k].y;
+        distBackward += Math.sqrt(dxRev*dxRev + dyRev*dyRev);
+      }
+      distForward /= NUM_POINTS;
+      distBackward /= NUM_POINTS;
+
+      allMatches.push({
+        i: i,
+        j: j,
+        bestDist: Math.min(distForward, distBackward),
+        isForward: distForward <= distBackward + 15
+      });
     }
   }
-  orderScore = targetPaths.length ? Math.round((correctOrders / targetPaths.length) * 100) : 0;
 
+  // Greedy matching: flatten, sort by bestDist, assign
+  allMatches.sort((a, b) => a.bestDist - b.bestDist);
 
-  // Calculate Shape Score
-  // Since KanjiCanvas.recognize() might be too heavy to run *every* stroke, we'll do a simple heuristic
-  // combined with recognize() if possible. KanjiCanvas is loaded globally as KanjiCanvas.
+  let assignedUser = new Set();
+  let assignedTarget = new Set();
+
+  for (let match of allMatches) {
+     if (!assignedUser.has(match.i) && !assignedTarget.has(match.j)) {
+         assignedUser.add(match.i);
+         assignedTarget.add(match.j);
+
+         // Calculate shape score for this match
+         let strokeShapeScore = Math.max(0, 100 - (match.bestDist / MAX_DIST * 100));
+         totalShapeSum += strokeShapeScore;
+
+         // Order score is independent % of correctly ordered strokes
+         if (strokeShapeScore > 30) {
+            if (match.i === match.j && match.isForward) {
+                correctOrders++;
+            }
+         }
+     }
+  }
+
+  // 1. SHAPE SCORE (0-100) using KanjiCanvas.recognize()
   let shapeScore = 0;
 
-  // Custom simple shape matching using stroke data geometric bounds if KanjiCanvas is not perfectly matching
-  let overlapScore = targetPaths.length ? Math.max(0, 100 - Math.abs(strokeData.length - targetPaths.length) * 40) : 0;
+  if (typeof KanjiCanvas !== 'undefined' && KanjiCanvas.recognize) {
+      // KanjiCanvas expects array of paths where each path is an array of [x, y] coordinates
+      let kcStrokeData = strokeData.map(stroke => stroke.map(pt => [pt.x, pt.y]));
+      let result = KanjiCanvas.recognize(kcStrokeData);
 
-  if (typeof window.KanjiCanvas !== 'undefined' && window.KanjiCanvas.refPatterns) {
-    // We can use the exposed feature extraction from KanjiCanvas
-    try {
-       // KanjiCanvas normally relies on its own "recordedPattern_..." logic.
-       // It expects data in [ [ [x,y],[x,y] ], [ [x,y],[x,y] ] ] format, which strokeData exactly is!
-       // But we need to normalize to 256x256 first.
-
-       let scaleRatio = 256 / CANVAS_SIZE;
-       let normalizedStrokes = strokeData.map(stroke => stroke.map(pt => [pt.x * scaleRatio, pt.y * scaleRatio]));
-
-       // Use KanjiCanvas's recognize function pipeline manually if it doesn't crash
-       // momentNormalize is hardcoded to use KanjiCanvas.recordedPattern_[id].
-       // We can inject our pattern directly if we want to use its matcher:
-       const tempId = "tempCanvasID";
-       KanjiCanvas["recordedPattern_" + tempId] = normalizedStrokes;
-
-       if (KanjiCanvas.momentNormalize && KanjiCanvas.extractFeatures) {
-           let norm = KanjiCanvas.momentNormalize(tempId);
-           let features = KanjiCanvas.extractFeatures(norm, 20);
-
-           // We can get coarse classifications if we want, or just get exact distance for our targetChar.
-           // Since we KNOW the target character, we just need to find it in refPatterns and calculate distance.
-           let targetPattern = KanjiCanvas.refPatterns.find(p => p[0] === targetChar);
-           if (targetPattern) {
-               let rMap = KanjiCanvas.getMap(features, targetPattern[2], KanjiCanvas.endPointDistance);
-               rMap = KanjiCanvas.completeMap(features, targetPattern[2], KanjiCanvas.endPointDistance, rMap);
-               let dist = KanjiCanvas.computeDistance(targetPattern[2], features, KanjiCanvas.endPointDistance, rMap);
-
-               // dist is lower when shape matches. Max is around 3000-5000.
-               let mappedScore = Math.max(0, 100 - (dist / 150));
-               overlapScore = mappedScore; // prioritize precise kanjicanvas dist over naive overlap
-           }
-       }
-    } catch (e) {
-       console.warn("KanjiCanvas extraction failed, fallback to basic score", e);
-    }
+      // If the target char is in the results, we give a score based on its position in candidates
+      if (result && result.length > 0) {
+          let foundIndex = result.indexOf(targetChar);
+          if (foundIndex === 0) shapeScore = 100;
+          else if (foundIndex === 1) shapeScore = 90;
+          else if (foundIndex === 2) shapeScore = 80;
+          else if (foundIndex === 3) shapeScore = 70;
+          else if (foundIndex > 3 && foundIndex <= 10) shapeScore = 60;
+      }
   }
 
-  shapeScore = Math.min(100, Math.max(0, overlapScore));
+  // Fallback to geometric if KanjiCanvas didn't find it or isn't loaded
+  if (shapeScore === 0) {
+      shapeScore = Math.round(totalShapeSum / targetPaths.length);
+      let penalty = Math.abs(strokeData.length - targetPaths.length) * 20;
+      shapeScore = Math.max(0, shapeScore - penalty);
+  }
 
-  orderScore = Math.max(0, orderScore);
-  shapeScore = Math.max(0, shapeScore);
+  // 2. ORDER SCORE (0-100) purely independent
+  let orderScore = targetPaths.length > 0 ? Math.round((correctOrders / targetPaths.length) * 100) : 0;
 
   const finalScore = (orderScore + shapeScore) / 2;
 
-  document.getElementById('scoreShape').textContent = shapeScore;
+    document.getElementById('scoreShape').textContent = shapeScore;
   document.getElementById('scoreOrder').textContent = orderScore;
 
-  if (finalScore >= 68 && strokeData.length === targetPaths.length) {
+  if (finalScore >= 68) {
     document.getElementById('canvasSelesai').disabled = false;
   } else {
     document.getElementById('canvasSelesai').disabled = true;
@@ -391,4 +468,83 @@ function handleSkip() {
 
 function handleSelesai() {
   if (completionCallback) completionCallback(true, false);
+}
+
+// Utility to sample exactly NUM_POINTS evenly spaced from an SVG path string
+function samplePathPoints(pathStr, numPoints) {
+  // Use a temporary SVG path element to sample points precisely
+  const ns = "http://www.w3.org/2000/svg";
+  let pathEl = document.createElementNS(ns, "path");
+  pathEl.setAttribute("d", pathStr);
+
+  // Need to append to DOM to get getTotalLength() in some browsers, but let's try without first
+  let svgEl = document.createElementNS(ns, "svg");
+  svgEl.style.display = "none";
+  svgEl.appendChild(pathEl);
+  document.body.appendChild(svgEl);
+
+  let len = pathEl.getTotalLength();
+  let pts = [];
+  for (let i = 0; i < numPoints; i++) {
+    let pt = pathEl.getPointAtLength(len * (i / (numPoints - 1)));
+    // Scale from 109x109 to CANVAS_SIZE
+    pts.push({
+      x: pt.x * (CANVAS_SIZE / 109),
+      y: pt.y * (CANVAS_SIZE / 109)
+    });
+  }
+
+  document.body.removeChild(svgEl);
+  return pts;
+}
+
+// Utility to sample exactly NUM_POINTS evenly spaced from raw user stroke points
+function sampleRawStrokePoints(rawPoints, numPoints) {
+  if (rawPoints.length === 0) {
+    return Array(numPoints).fill({x: 0, y: 0});
+  }
+  if (rawPoints.length === 1) {
+    return Array(numPoints).fill({x: rawPoints[0].x, y: rawPoints[0].y});
+  }
+
+  let totalLength = 0;
+  let distances = [0];
+  for (let i = 1; i < rawPoints.length; i++) {
+    let dx = rawPoints[i].x - rawPoints[i-1].x;
+    let dy = rawPoints[i].y - rawPoints[i-1].y;
+    let d = Math.sqrt(dx*dx + dy*dy);
+    totalLength += d;
+    distances.push(totalLength);
+  }
+
+  let pts = [];
+  for (let i = 0; i < numPoints; i++) {
+    let targetDist = totalLength * (i / (numPoints - 1));
+
+    // Find the segment containing targetDist
+    let idx = 1;
+    while (idx < distances.length && distances[idx] < targetDist) {
+      idx++;
+    }
+
+    if (idx >= distances.length) {
+      pts.push({x: rawPoints[rawPoints.length - 1].x, y: rawPoints[rawPoints.length - 1].y});
+      continue;
+    }
+
+    let distPrev = distances[idx - 1];
+    let distNext = distances[idx];
+    let segmentLen = distNext - distPrev;
+
+    if (segmentLen === 0) {
+      pts.push({x: rawPoints[idx].x, y: rawPoints[idx].y});
+    } else {
+      let t = (targetDist - distPrev) / segmentLen;
+      let x = rawPoints[idx - 1].x + t * (rawPoints[idx].x - rawPoints[idx - 1].x);
+      let y = rawPoints[idx - 1].y + t * (rawPoints[idx].y - rawPoints[idx - 1].y);
+      pts.push({x, y});
+    }
+  }
+
+  return pts;
 }

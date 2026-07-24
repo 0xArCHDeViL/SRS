@@ -110,6 +110,9 @@ function openCanvasModal(char, slotElement) {
       session.menulisState.completedSlots++;
     }
     if (isSkip) {
+      slotElement.classList.add('completed');
+      slotElement.textContent = char; // Replace [...] with actual char on skip
+      slotElement.style.color = 'var(--shu-bright)'; // Color it red to indicate wrong
       session.menulisState.wrongSlots++; // Skip means wrong
       session.menulisState.completedSlots++;
     }
